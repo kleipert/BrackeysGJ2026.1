@@ -80,6 +80,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Background_Lung Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 7710218356488112284, guid: ed2cb92343f93f7478257e99d1452767, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7767552043519696845, guid: ed2cb92343f93f7478257e99d1452767, type: 3}
       propertyPath: m_Sprite
       value: 
