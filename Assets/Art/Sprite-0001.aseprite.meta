@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 28094433d15ac94409ecac37352ca7a9
+guid: bfe0689eaecdec44a97d47f98a3437df
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -127,9 +127,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Blutzellen
+  - name: Sprite-0001
     originalName: 
-    pivot: {x: 0.48936167, y: -0.19999999}
+    pivot: {x: 0.5538462, y: -0.13084112}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -137,9 +137,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 47
-      height: 50
-    spriteID: 13ca4e72f8b282943a217f9b914dc24c
+      width: 65
+      height: 107
+    spriteID: e3b650a0c44d44640a68e2a6a71c562f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -153,25 +153,25 @@ ScriptedImporter:
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 4044155139
+      value0: 4228612825
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: Blutzellen
+    name: Sprite-0001
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Blutzellen
+    - name: Sprite-0001
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 9
-        y: 10
-        width: 47
-        height: 50
-      spriteId: 13ca4e72f8b282943a217f9b914dc24c
+        x: 28
+        y: 14
+        width: 65
+        height: 107
+      spriteId: e3b650a0c44d44640a68e2a6a71c562f
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
@@ -181,5 +181,5 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 64, y: 64}
-  previousTextureSize: {x: 64, y: 64}
+  canvasSize: {x: 128, y: 128}
+  previousTextureSize: {x: 128, y: 128}
