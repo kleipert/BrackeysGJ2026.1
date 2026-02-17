@@ -14,41 +14,55 @@ public class PlayerMovement : MonoBehaviour
     [Range(1,2)] [SerializeField] private float _sprintMultiplier = 1.5f;
     [SerializeField] private float _jumpForce = 5f;
     [SerializeField] private float _doubleJumpForce = 5f;
-    [SerializeField] private bool _doubleJumpUsed = false;
+    [SerializeField] private bool _doubleJumpUsed;
     public bool IsGrounded { get; private set; }
+    public int FacingDirection { get; private set; } = 1;
     
     private Rigidbody2D _rb;
-    private Vector2 moveInput;
+    private Vector2 _moveInput;
+    private Animator _anim;
 
-    private bool _jumpPressed = false;
-    [SerializeField] private bool _sprintPressed = false;
+    private bool _jumpPressed;
+    [SerializeField] private bool _sprintPressed;
     private bool _facingRight = true;
-    public int FacingDirection { get; private set; } = 1;
+    
+    private static readonly int Grounded = Animator.StringToHash("isGrounded");
     
     
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
+        _anim = GetComponent<Animator>();
     }
 
     void Update()
     {
         var speed = _sprintPressed ? _movementSpeed * _sprintMultiplier : _movementSpeed;
         IsGrounded = IsPlayerOnGround();
-        if (IsGrounded && _doubleJumpUsed)
-            _doubleJumpUsed = false;
-        _rb.linearVelocityX = moveInput.x * speed;
+        if (IsGrounded)
+        {
+            _anim.SetBool(Grounded, true);
+            if(_doubleJumpUsed)
+                _doubleJumpUsed = false;
+        }
+        else
+        {
+            _anim.SetBool(Grounded, false);
+        }
+        _rb.linearVelocityX = _moveInput.x * speed;
     }
 
     public void OnMove(InputAction.CallbackContext context)
     {
-        moveInput = context.ReadValue<Vector2>();
-        HandleFlip(moveInput.x);
+        _moveInput = context.ReadValue<Vector2>();
+        HandleFlip(_moveInput.x);
     }
 
     public void OnJump(InputAction.CallbackContext context)
     {
-        _jumpPressed = context.performed;
+        if (!context.started) return;
+        
+        _jumpPressed = context.started;
         if (IsGrounded && _jumpPressed)
         {
             _rb.AddForceY(_jumpForce, ForceMode2D.Impulse);
@@ -64,7 +78,7 @@ public class PlayerMovement : MonoBehaviour
     
     public void OnSprint(InputAction.CallbackContext context)
     {
-        _sprintPressed = context.performed;
+        _sprintPressed = context.started;
     }
 
     private void Flip()
