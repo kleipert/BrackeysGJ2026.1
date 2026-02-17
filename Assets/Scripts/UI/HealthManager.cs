@@ -18,7 +18,6 @@ public class HealthManager : MonoBehaviour
             return;
         }
         Instance = this;
-        DontDestroyOnLoad(gameObject);
 
         currentHealth = 3;
         maxHealth = 3;
@@ -42,6 +41,11 @@ public class HealthManager : MonoBehaviour
             var anim = healthBar[i].GetComponent<Animator>();
             if (anim != null)
                 anim.SetBool("Lost", i >= currentHealth);
+        }
+
+        if (currentHealth <= 0)
+        {
+            PauseManager.Instance.IsDead();
         }
     }
 
