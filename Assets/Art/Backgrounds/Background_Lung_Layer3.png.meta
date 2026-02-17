@@ -1,0 +1,517 @@
+fileFormatVersion: 2
+guid: d741fe371cd5a4941b88ae0ce067d309
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1808115390161169396
+    second: Background_Lung_Layer3_0
+  - first:
+      213: -2543939607986219003
+    second: Background_Lung_Layer3_1
+  - first:
+      213: 1159355289918233072
+    second: Background_Lung_Layer3_2
+  - first:
+      213: 5528798336500231997
+    second: Background_Lung_Layer3_3
+  - first:
+      213: 1502924416084031967
+    second: Background_Lung_Layer3_4
+  - first:
+      213: 5785295232034098825
+    second: Background_Lung_Layer3_5
+  - first:
+      213: -6692664964342382064
+    second: Background_Lung_Layer3_6
+  - first:
+      213: 3656748020620942224
+    second: Background_Lung_Layer3_7
+  - first:
+      213: 5256790994710980055
+    second: Background_Lung_Layer3_8
+  - first:
+      213: 2794309253355398706
+    second: Background_Lung_Layer3_9
+  - first:
+      213: 2714817650587910217
+    second: Background_Lung_Layer3_10
+  - first:
+      213: -7305754801189131298
+    second: Background_Lung_Layer3_11
+  - first:
+      213: -5020229218102343735
+    second: Background_Lung_Layer3_12
+  - first:
+      213: -3163012896702985391
+    second: Background_Lung_Layer3_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Background_Lung_Layer3_0
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 583
+        width: 55
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c04d688e1a848e6e0800000000000000
+      internalID: -1808115390161169396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Lung_Layer3_1
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 600
+        width: 45
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5085fe7a76c12bcd0800000000000000
+      internalID: -2543939607986219003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Lung_Layer3_2
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 609
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f9db006e7bd61010800000000000000
+      internalID: 1159355289918233072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Lung_Layer3_3
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 571
+        width: 62
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3fedd15bcc3abc40800000000000000
+      internalID: 5528798336500231997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Lung_Layer3_4
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 457
+        width: 79
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd933f82bc57bd410800000000000000
+      internalID: 1502924416084031967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Lung_Layer3_5
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 478
+        width: 71
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98e472a9c5f794050800000000000000
+      internalID: 5785295232034098825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Lung_Layer3_6
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 400
+        width: 45
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0128ba79ca0ee13a0800000000000000
+      internalID: -6692664964342382064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Lung_Layer3_7
+      rect:
+        serializedVersion: 2
+        x: 1451
+        y: 395
+        width: 60
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09b593253f06fb230800000000000000
+      internalID: 3656748020620942224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Lung_Layer3_8
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 312
+        width: 43
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d5683ade8fd3f840800000000000000
+      internalID: 5256790994710980055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Lung_Layer3_9
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 288
+        width: 68
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 236e5d6067167c620800000000000000
+      internalID: 2794309253355398706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Lung_Layer3_10
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 225
+        width: 56
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 940c04df448fca520800000000000000
+      internalID: 2714817650587910217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Lung_Layer3_11
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 207
+        width: 55
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edb640347bebc9a90800000000000000
+      internalID: -7305754801189131298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Lung_Layer3_12
+      rect:
+        serializedVersion: 2
+        x: 1255
+        y: 258
+        width: 58
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c709fbdf10945ab0800000000000000
+      internalID: -5020229218102343735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Lung_Layer3_13
+      rect:
+        serializedVersion: 2
+        x: 1427
+        y: 119
+        width: 63
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15b0a006788ba14d0800000000000000
+      internalID: -3163012896702985391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Lung_Layer3_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1706
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a6b37c2bc8a36642a49041dce7563a7
+      internalID: -970701754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: bf7b51f0a0c6da648b5635c686503146
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Background_Lung_Layer3_0: -1808115390161169396
+      Background_Lung_Layer3_1: -2543939607986219003
+      Background_Lung_Layer3_10: 2714817650587910217
+      Background_Lung_Layer3_11: -7305754801189131298
+      Background_Lung_Layer3_12: -5020229218102343735
+      Background_Lung_Layer3_13: -3163012896702985391
+      Background_Lung_Layer3_14: -970701754
+      Background_Lung_Layer3_2: 1159355289918233072
+      Background_Lung_Layer3_3: 5528798336500231997
+      Background_Lung_Layer3_4: 1502924416084031967
+      Background_Lung_Layer3_5: 5785295232034098825
+      Background_Lung_Layer3_6: -6692664964342382064
+      Background_Lung_Layer3_7: 3656748020620942224
+      Background_Lung_Layer3_8: 5256790994710980055
+      Background_Lung_Layer3_9: 2794309253355398706
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
