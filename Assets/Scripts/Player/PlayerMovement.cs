@@ -8,7 +8,7 @@ namespace Player
 
         [Header("Ground Check")]
         [SerializeField] private LayerMask _whatIsGround;
-        [SerializeField] private Transform _playerGroundCheck;
+        public Transform _playerGroundCheck;
         [SerializeField] private float _groundCheckDistance = .05f;
     
         [Header("Movement")]
@@ -80,7 +80,7 @@ namespace Player
     
         public void OnSprint(InputAction.CallbackContext context)
         {
-            _sprintPressed = context.started;
+            _sprintPressed = context.performed;
         }
 
         private void Flip()

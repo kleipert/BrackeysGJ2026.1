@@ -1,0 +1,406 @@
+fileFormatVersion: 2
+guid: 72c9458ede071ff46963d8692de957ba
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 747265544371303338
+    second: brain_recovery_0
+  - first:
+      213: -584278058199124717
+    second: brain_recovery_1
+  - first:
+      213: 3925895754037059094
+    second: brain_recovery_2
+  - first:
+      213: -31107161582826963
+    second: brain_recovery_3
+  - first:
+      213: -7277423033984654328
+    second: brain_recovery_4
+  - first:
+      213: -9130026233979820786
+    second: brain_recovery_5
+  - first:
+      213: 6900356763304789223
+    second: brain_recovery_6
+  - first:
+      213: 3242501653895443640
+    second: brain_recovery_7
+  - first:
+      213: -1303030201386454758
+    second: brain_recovery_8
+  - first:
+      213: -1843110863903155042
+    second: brain_recovery_9
+  - first:
+      213: -828902247262744525
+    second: brain_recovery_10
+  - first:
+      213: 1756100992346287178
+    second: brain_recovery_11
+  - first:
+      213: -3526144932920876268
+    second: brain_recovery_12
+  - first:
+      213: -3513969508949904899
+    second: brain_recovery_13
+  - first:
+      213: 3874502692481754455
+    second: brain_recovery_14
+  - first:
+      213: -8828886686563685618
+    second: brain_recovery_15
+  - first:
+      213: -7685273594150558055
+    second: brain_recovery_16
+  - first:
+      213: 6191565613966201539
+    second: brain_recovery_17
+  - first:
+      213: 2681438696185832565
+    second: brain_recovery_18
+  - first:
+      213: 4274861401208717239
+    second: brain_recovery_19
+  - first:
+      213: 319986232718763097
+    second: brain_recovery_20
+  - first:
+      213: 6968459005870114313
+    second: brain_recovery_21
+  - first:
+      213: -1104478460241024952
+    second: brain_recovery_22
+  - first:
+      213: -6785772271537124178
+    second: brain_recovery_23
+  - first:
+      213: -5741123380931881975
+    second: brain_recovery_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 30
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: brain_recovery_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 0
+        width: 124
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa3f32dad02de5a00800000000000000
+      internalID: 747265544371303338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brain_recovery_1
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 0
+        width: 124
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3157cf2a33a34e7f0800000000000000
+      internalID: -584278058199124717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brain_recovery_2
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 0
+        width: 113
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61ed79453659b7630800000000000000
+      internalID: 3925895754037059094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brain_recovery_3
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 0
+        width: 123
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2a82eb833c719ff0800000000000000
+      internalID: -31107161582826963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brain_recovery_7
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 0
+        width: 125
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b4fd00231eaffc20800000000000000
+      internalID: 3242501653895443640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brain_recovery_11
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 0
+        width: 124
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4ce28e5c8cee5810800000000000000
+      internalID: 1756100992346287178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brain_recovery_14
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 0
+        width: 120
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7556baabbaff4c530800000000000000
+      internalID: 3874502692481754455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brain_recovery_15
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 0
+        width: 125
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0b2235065e797580800000000000000
+      internalID: -8828886686563685618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 27bfa3ff144ac354b897ff74aa7c1199
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      brain_recovery_0: 747265544371303338
+      brain_recovery_1: -584278058199124717
+      brain_recovery_10: -828902247262744525
+      brain_recovery_11: 1756100992346287178
+      brain_recovery_12: -3526144932920876268
+      brain_recovery_13: -3513969508949904899
+      brain_recovery_14: 3874502692481754455
+      brain_recovery_15: -8828886686563685618
+      brain_recovery_16: -7685273594150558055
+      brain_recovery_17: 6191565613966201539
+      brain_recovery_18: 2681438696185832565
+      brain_recovery_19: 4274861401208717239
+      brain_recovery_2: 3925895754037059094
+      brain_recovery_20: 319986232718763097
+      brain_recovery_21: 6968459005870114313
+      brain_recovery_22: -1104478460241024952
+      brain_recovery_23: -6785772271537124178
+      brain_recovery_24: -5741123380931881975
+      brain_recovery_3: -31107161582826963
+      brain_recovery_4: -7277423033984654328
+      brain_recovery_5: -9130026233979820786
+      brain_recovery_6: 6900356763304789223
+      brain_recovery_7: 3242501653895443640
+      brain_recovery_8: -1303030201386454758
+      brain_recovery_9: -1843110863903155042
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

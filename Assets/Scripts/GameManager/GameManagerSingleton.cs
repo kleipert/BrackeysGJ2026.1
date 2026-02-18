@@ -3,9 +3,9 @@ using UnityEngine;
 
 namespace GameManager
 {
-    public class GameManager : MonoBehaviour
+    public class GameManagerSingleton : MonoBehaviour
     {
-        public static GameManager Instance;
+        public static GameManagerSingleton Instance;
         private PlayerMovement _playerMovement;
         
         private void Awake()
@@ -25,6 +25,8 @@ namespace GameManager
 
         public int GetPlayerFacingDirection() => _playerMovement.FacingDirection;
         public bool GetPlayerIsGrounded() => _playerMovement.IsGrounded;
+        public float GetPlayerXInWorld() => _playerMovement.transform.position.x;
+        public Transform GetPlayerGroundCheckTransform() => _playerMovement._playerGroundCheck;
 
 
 

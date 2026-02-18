@@ -10,7 +10,7 @@ namespace Misc
         private void Start()
         {
             physical_beam.SetActive(false);
-            _facingDirection = GameManager.GameManager.Instance.GetPlayerFacingDirection();
+            _facingDirection = GameManager.GameManagerSingleton.Instance.GetPlayerFacingDirection();
             transform.localScale = new Vector3(transform.localScale.x * _facingDirection, transform.localScale.y,
                 transform.localScale.z);
         }
