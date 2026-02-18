@@ -11,10 +11,7 @@ namespace Player
         public void OnShoot(InputAction.CallbackContext context)
         {
             if (context.started)
-            {
-                var worldPos = _shootingPosition.TransformPoint(Vector3.zero);
                 Instantiate(_laserBeamPrefab, _shootingPosition.position, Quaternion.identity);
-            }
         }
     }
 }
