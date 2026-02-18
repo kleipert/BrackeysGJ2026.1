@@ -217,6 +217,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2615511749863940571, guid: e2f9e95adecec7f4bb324433a1b239c3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 6277901144038315015, guid: 511369616a421dc41aa712a73075b187, type: 3}
+    - target: {fileID: 3048907810094890791, guid: e2f9e95adecec7f4bb324433a1b239c3, type: 3}
+      propertyPath: m_text
+      value: "MISSION FAILED\n \n REDEPLOY REQUIRED"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3048907810094890791, guid: e2f9e95adecec7f4bb324433a1b239c3, type: 3}
+      propertyPath: m_fontSize
+      value: 54
+      objectReference: {fileID: 0}
+    - target: {fileID: 3048907810094890791, guid: e2f9e95adecec7f4bb324433a1b239c3, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 7569574bbd3666e4bad3d88a71da7436, type: 2}
+    - target: {fileID: 3048907810094890791, guid: e2f9e95adecec7f4bb324433a1b239c3, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 54
+      objectReference: {fileID: 0}
+    - target: {fileID: 3048907810094890791, guid: e2f9e95adecec7f4bb324433a1b239c3, type: 3}
+      propertyPath: m_TextWrappingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3048907810094890791, guid: e2f9e95adecec7f4bb324433a1b239c3, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 3048907810094890791, guid: e2f9e95adecec7f4bb324433a1b239c3, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3048907810094890791, guid: e2f9e95adecec7f4bb324433a1b239c3, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4643590383272184228, guid: e2f9e95adecec7f4bb324433a1b239c3, type: 3}
       propertyPath: mainCamera
       value: 
@@ -250,7 +286,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &594113662
 MonoBehaviour:
   m_ObjectHideFlags: 0
