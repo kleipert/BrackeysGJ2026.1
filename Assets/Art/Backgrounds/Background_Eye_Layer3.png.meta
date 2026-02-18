@@ -1,0 +1,2210 @@
+fileFormatVersion: 2
+guid: 6f68c8f8926f45342a219cdf05a9c0c3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8014663073180912879
+    second: Background_Eye_Layer3_0
+  - first:
+      213: 28392970146912916
+    second: Background_Eye_Layer3_1
+  - first:
+      213: -2281089846609520741
+    second: Background_Eye_Layer3_2
+  - first:
+      213: 8729323369912675448
+    second: Background_Eye_Layer3_3
+  - first:
+      213: 5466423313104314657
+    second: Background_Eye_Layer3_4
+  - first:
+      213: 626543226470677783
+    second: Background_Eye_Layer3_5
+  - first:
+      213: -100880430694883144
+    second: Background_Eye_Layer3_6
+  - first:
+      213: -6402784611750747162
+    second: Background_Eye_Layer3_7
+  - first:
+      213: 8430906023021464545
+    second: Background_Eye_Layer3_8
+  - first:
+      213: 2916599878809270891
+    second: Background_Eye_Layer3_9
+  - first:
+      213: 4763725200709036339
+    second: Background_Eye_Layer3_10
+  - first:
+      213: -2213583185532551197
+    second: Background_Eye_Layer3_11
+  - first:
+      213: 486639304584571780
+    second: Background_Eye_Layer3_12
+  - first:
+      213: 1850511550902765342
+    second: Background_Eye_Layer3_13
+  - first:
+      213: 2127026865188536835
+    second: Background_Eye_Layer3_14
+  - first:
+      213: 8481583138025817264
+    second: Background_Eye_Layer3_15
+  - first:
+      213: 4530080701062753321
+    second: Background_Eye_Layer3_16
+  - first:
+      213: -5661387373065904595
+    second: Background_Eye_Layer3_17
+  - first:
+      213: 3749013697987692810
+    second: Background_Eye_Layer3_18
+  - first:
+      213: -8017593540271413675
+    second: Background_Eye_Layer3_19
+  - first:
+      213: 1637831147840313057
+    second: Background_Eye_Layer3_20
+  - first:
+      213: 7831792343708928018
+    second: Background_Eye_Layer3_21
+  - first:
+      213: -2745974532728290532
+    second: Background_Eye_Layer3_22
+  - first:
+      213: -6677411608429491148
+    second: Background_Eye_Layer3_23
+  - first:
+      213: -1638509447305016609
+    second: Background_Eye_Layer3_24
+  - first:
+      213: 4251666916047582484
+    second: Background_Eye_Layer3_25
+  - first:
+      213: -5525817183806413358
+    second: Background_Eye_Layer3_26
+  - first:
+      213: 5266063046704847556
+    second: Background_Eye_Layer3_27
+  - first:
+      213: -8867543259714259006
+    second: Background_Eye_Layer3_28
+  - first:
+      213: -4290362892832915826
+    second: Background_Eye_Layer3_29
+  - first:
+      213: 2906350326720569857
+    second: Background_Eye_Layer3_30
+  - first:
+      213: 3218674332607398336
+    second: Background_Eye_Layer3_31
+  - first:
+      213: -6042142414676045835
+    second: Background_Eye_Layer3_32
+  - first:
+      213: 7416390470971259670
+    second: Background_Eye_Layer3_33
+  - first:
+      213: -8539958017087810823
+    second: Background_Eye_Layer3_34
+  - first:
+      213: -487148435800006017
+    second: Background_Eye_Layer3_35
+  - first:
+      213: -4370125358651529292
+    second: Background_Eye_Layer3_36
+  - first:
+      213: 6086575091776681522
+    second: Background_Eye_Layer3_37
+  - first:
+      213: 2355220490188771887
+    second: Background_Eye_Layer3_38
+  - first:
+      213: -7600031599096473305
+    second: Background_Eye_Layer3_39
+  - first:
+      213: -2987264146635876316
+    second: Background_Eye_Layer3_40
+  - first:
+      213: 3287344210566397780
+    second: Background_Eye_Layer3_41
+  - first:
+      213: -6015706560078619961
+    second: Background_Eye_Layer3_42
+  - first:
+      213: -7853174511791656647
+    second: Background_Eye_Layer3_43
+  - first:
+      213: -6680498451768313915
+    second: Background_Eye_Layer3_44
+  - first:
+      213: 4693737428464635005
+    second: Background_Eye_Layer3_45
+  - first:
+      213: -3118116620206127656
+    second: Background_Eye_Layer3_46
+  - first:
+      213: 1418390356015979267
+    second: Background_Eye_Layer3_47
+  - first:
+      213: 3600313156841856145
+    second: Background_Eye_Layer3_48
+  - first:
+      213: -6458824877754841644
+    second: Background_Eye_Layer3_49
+  - first:
+      213: 5903241502380409072
+    second: Background_Eye_Layer3_50
+  - first:
+      213: 4683800554445304071
+    second: Background_Eye_Layer3_51
+  - first:
+      213: -2393431425498825459
+    second: Background_Eye_Layer3_52
+  - first:
+      213: 3258957086364343511
+    second: Background_Eye_Layer3_53
+  - first:
+      213: -7840155533374534284
+    second: Background_Eye_Layer3_54
+  - first:
+      213: -7833459491334005395
+    second: Background_Eye_Layer3_55
+  - first:
+      213: 1894319800602316604
+    second: Background_Eye_Layer3_56
+  - first:
+      213: 5824923445917985979
+    second: Background_Eye_Layer3_57
+  - first:
+      213: -2290798195490791499
+    second: Background_Eye_Layer3_58
+  - first:
+      213: -6308845359834761149
+    second: Background_Eye_Layer3_59
+  - first:
+      213: 1382572769284060714
+    second: Background_Eye_Layer3_60
+  - first:
+      213: 1222977680260857480
+    second: Background_Eye_Layer3_61
+  - first:
+      213: -1442356062304171573
+    second: Background_Eye_Layer3_62
+  - first:
+      213: 4935899096129876791
+    second: Background_Eye_Layer3_63
+  - first:
+      213: -4893105313363646771
+    second: Background_Eye_Layer3_64
+  - first:
+      213: -5835851682113623760
+    second: Background_Eye_Layer3_65
+  - first:
+      213: -4502242633948755210
+    second: Background_Eye_Layer3_66
+  - first:
+      213: 2044300949257702972
+    second: Background_Eye_Layer3_67
+  - first:
+      213: -582953250396346933
+    second: Background_Eye_Layer3_68
+  - first:
+      213: -5416234800268660732
+    second: Background_Eye_Layer3_69
+  - first:
+      213: 6074727326057789332
+    second: Background_Eye_Layer3_70
+  - first:
+      213: 4151295180499627365
+    second: Background_Eye_Layer3_71
+  - first:
+      213: -1555360627713161220
+    second: Background_Eye_Layer3_72
+  - first:
+      213: -5746513688209809700
+    second: Background_Eye_Layer3_73
+  - first:
+      213: 7901318120150199161
+    second: Background_Eye_Layer3_74
+  - first:
+      213: 8787314622895350346
+    second: Background_Eye_Layer3_75
+  - first:
+      213: -7797601337775437459
+    second: Background_Eye_Layer3_76
+  - first:
+      213: -5874437732658574251
+    second: Background_Eye_Layer3_77
+  - first:
+      213: -4357977737512861465
+    second: Background_Eye_Layer3_78
+  - first:
+      213: 2866860668323366776
+    second: Background_Eye_Layer3_79
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_0
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 589
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1137c90066236c090800000000000000
+      internalID: -8014663073180912879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_1
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 554
+        width: 129
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49a99b3814fd46000800000000000000
+      internalID: 28392970146912916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_2
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 592
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b97d618ced0f750e0800000000000000
+      internalID: -2281089846609520741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_3
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 573
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87c2921ea59c42970800000000000000
+      internalID: 8729323369912675448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_4
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 567
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1212f797a03acdb40800000000000000
+      internalID: 5466423313104314657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_5
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 572
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71d3632bebde1b800800000000000000
+      internalID: 626543226470677783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_6
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 561
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b0a4a368c9999ef0800000000000000
+      internalID: -100880430694883144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_7
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 581
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e3624ba15db427a0800000000000000
+      internalID: -6402784611750747162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_8
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 573
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1eb45eceb58900570800000000000000
+      internalID: 8430906023021464545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_9
+      rect:
+        serializedVersion: 2
+        x: 1295
+        y: 572
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6abf501328d97820800000000000000
+      internalID: 2916599878809270891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_10
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 560
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 339a6dba4d62c1240800000000000000
+      internalID: 4763725200709036339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_11
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 561
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3effd8122d5c741e0800000000000000
+      internalID: -2213583185532551197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_12
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 569
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48ba1838ed3e0c600800000000000000
+      internalID: 486639304584571780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_13
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 563
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e17015c73765ea910800000000000000
+      internalID: 1850511550902765342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_14
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 553
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30286471aa7b48d10800000000000000
+      internalID: 2127026865188536835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_15
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 547
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b4c8fa3de2a4b570800000000000000
+      internalID: 8481583138025817264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_16
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 464
+        width: 105
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92ca2be65641ede30800000000000000
+      internalID: 4530080701062753321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_17
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 562
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2e5684fd26be61b0800000000000000
+      internalID: -5661387373065904595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_18
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 556
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0941ae581c270430800000000000000
+      internalID: 3749013697987692810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_19
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 448
+        width: 133
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 556e7a67729cbb090800000000000000
+      internalID: -8017593540271413675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_20
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 545
+        width: 32
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e6971950cebab610800000000000000
+      internalID: 1637831147840313057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_21
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 542
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 218056954ad10bc60800000000000000
+      internalID: 7831792343708928018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_22
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 546
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c13067616b654e9d0800000000000000
+      internalID: -2745974532728290532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_23
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 540
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43c8d7445811553a0800000000000000
+      internalID: -6677411608429491148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_24
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 544
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fda4340c658d249e0800000000000000
+      internalID: -1638509447305016609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_25
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 454
+        width: 96
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 415fb4aa884f00b30800000000000000
+      internalID: 4251666916047582484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_26
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 529
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d528716c8a5053b0800000000000000
+      internalID: -5525817183806413358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_27
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 534
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ca57afa070d41940800000000000000
+      internalID: 5266063046704847556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_28
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 532
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c77256336820f480800000000000000
+      internalID: -8867543259714259006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_29
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 534
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8e3d272ea19574c0800000000000000
+      internalID: -4290362892832915826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_30
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 529
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1022501493e655820800000000000000
+      internalID: 2906350326720569857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_31
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 518
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c14bb290470bac20800000000000000
+      internalID: 3218674332607398336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_32
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 509
+        width: 39
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ffc9ea8c7ff52ca0800000000000000
+      internalID: -6042142414676045835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_33
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 526
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61b75d1f6df4ce660800000000000000
+      internalID: 7416390470971259670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_34
+      rect:
+        serializedVersion: 2
+        x: 1357
+        y: 526
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f25bba1e69fb7980800000000000000
+      internalID: -8539958017087810823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_35
+      rect:
+        serializedVersion: 2
+        x: 1361
+        y: 538
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f72e043241d4d39f0800000000000000
+      internalID: -487148435800006017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_36
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 506
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b726a5e3223a53c0800000000000000
+      internalID: -4370125358651529292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_37
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 501
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 236f6144ccbd77450800000000000000
+      internalID: 6086575091776681522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_38
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 509
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f225c6dae8c6fa020800000000000000
+      internalID: 2355220490188771887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_39
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 513
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7295c1ef683478690800000000000000
+      internalID: -7600031599096473305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_40
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 509
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4281289f51b1b86d0800000000000000
+      internalID: -2987264146635876316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_41
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 501
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45f3f35742efe9d20800000000000000
+      internalID: 3287344210566397780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_42
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 497
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cad68591cae38ca0800000000000000
+      internalID: -6015706560078619961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_43
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 469
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 931b181b36be30390800000000000000
+      internalID: -7853174511791656647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_44
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 459
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c77dcb8d0a1a43a0800000000000000
+      internalID: -6680498451768313915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_45
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 460
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7c079c9251832140800000000000000
+      internalID: 4693737428464635005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_46
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 456
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d54f5454793ab4d0800000000000000
+      internalID: -3118116620206127656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_47
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 451
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30b1c2b83822fa310800000000000000
+      internalID: 1418390356015979267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_48
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 451
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19c59b9adb1e6f130800000000000000
+      internalID: 3600313156841856145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_49
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 458
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d587f67ef4ad56a0800000000000000
+      internalID: -6458824877754841644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_50
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 457
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f04ab4aed68ce150800000000000000
+      internalID: 5903241502380409072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_51
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 458
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7017d76d9c3300140800000000000000
+      internalID: 4683800554445304071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_52
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 276
+        width: 102
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0db2e8acc2d8ced0800000000000000
+      internalID: -2393431425498825459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_53
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 337
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dc1dfe04342a3d20800000000000000
+      internalID: 3258957086364343511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_54
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 210
+        width: 120
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47dc561d41c223390800000000000000
+      internalID: -7840155533374534284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_55
+      rect:
+        serializedVersion: 2
+        x: 1341
+        y: 203
+        width: 137
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6ddf989816f94390800000000000000
+      internalID: -7833459491334005395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_56
+      rect:
+        serializedVersion: 2
+        x: 1426
+        y: 332
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3fc3e572d9f94a10800000000000000
+      internalID: 1894319800602316604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_57
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 312
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbc29c5230946d050800000000000000
+      internalID: 5824923445917985979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_58
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 305
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bf5aa9ad237530e0800000000000000
+      internalID: -2290798195490791499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_59
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 297
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3487d28229a7278a0800000000000000
+      internalID: -6308845359834761149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_60
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 297
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a26fd45cb92ef2310800000000000000
+      internalID: 1382572769284060714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_61
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 282
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88efd2878b3e8f010800000000000000
+      internalID: 1222977680260857480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_62
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 269
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc98ab2adc8bbfbe0800000000000000
+      internalID: -1442356062304171573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_63
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 273
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7333eff8316df7440800000000000000
+      internalID: 4935899096129876791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_64
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 256
+        width: 14
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc6226c64a2381cb0800000000000000
+      internalID: -4893105313363646771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_65
+      rect:
+        serializedVersion: 2
+        x: 1329
+        y: 237
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03960c590d3e20fa0800000000000000
+      internalID: -5835851682113623760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_66
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 166
+        width: 124
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fa8dd6ad22d481c0800000000000000
+      internalID: -4502242633948755210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_67
+      rect:
+        serializedVersion: 2
+        x: 1346
+        y: 234
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3ecf76d1e0de5c10800000000000000
+      internalID: 2044300949257702972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_68
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 231
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc5677d7b1fe8e7f0800000000000000
+      internalID: -582953250396346933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_69
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 201
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 400b0e5452ba5d4b0800000000000000
+      internalID: -5416234800268660732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_70
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 212
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49778095154cd4450800000000000000
+      internalID: 6074727326057789332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_71
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 209
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56da87fd8fc5c9930800000000000000
+      internalID: 4151295180499627365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_72
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 196
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf7478fefbf3a6ae0800000000000000
+      internalID: -1555360627713161220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_73
+      rect:
+        serializedVersion: 2
+        x: 1407
+        y: 201
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cde95553f384040b0800000000000000
+      internalID: -5746513688209809700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_74
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 197
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97be8e0a7fe17ad60800000000000000
+      internalID: 7901318120150199161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_75
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 200
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a42e543a710d2f970800000000000000
+      internalID: 8787314622895350346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_76
+      rect:
+        serializedVersion: 2
+        x: 1421
+        y: 200
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d69c8c195ea59c390800000000000000
+      internalID: -7797601337775437459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_77
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 178
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55c0cb9910ec97ea0800000000000000
+      internalID: -5874437732658574251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_78
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 162
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e04c78565a5583c0800000000000000
+      internalID: -4357977737512861465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_Eye_Layer3_79
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 158
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87704fba69229c720800000000000000
+      internalID: 2866860668323366776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Background_Eye_Layer3_0: -8014663073180912879
+      Background_Eye_Layer3_1: 28392970146912916
+      Background_Eye_Layer3_10: 4763725200709036339
+      Background_Eye_Layer3_11: -2213583185532551197
+      Background_Eye_Layer3_12: 486639304584571780
+      Background_Eye_Layer3_13: 1850511550902765342
+      Background_Eye_Layer3_14: 2127026865188536835
+      Background_Eye_Layer3_15: 8481583138025817264
+      Background_Eye_Layer3_16: 4530080701062753321
+      Background_Eye_Layer3_17: -5661387373065904595
+      Background_Eye_Layer3_18: 3749013697987692810
+      Background_Eye_Layer3_19: -8017593540271413675
+      Background_Eye_Layer3_2: -2281089846609520741
+      Background_Eye_Layer3_20: 1637831147840313057
+      Background_Eye_Layer3_21: 7831792343708928018
+      Background_Eye_Layer3_22: -2745974532728290532
+      Background_Eye_Layer3_23: -6677411608429491148
+      Background_Eye_Layer3_24: -1638509447305016609
+      Background_Eye_Layer3_25: 4251666916047582484
+      Background_Eye_Layer3_26: -5525817183806413358
+      Background_Eye_Layer3_27: 5266063046704847556
+      Background_Eye_Layer3_28: -8867543259714259006
+      Background_Eye_Layer3_29: -4290362892832915826
+      Background_Eye_Layer3_3: 8729323369912675448
+      Background_Eye_Layer3_30: 2906350326720569857
+      Background_Eye_Layer3_31: 3218674332607398336
+      Background_Eye_Layer3_32: -6042142414676045835
+      Background_Eye_Layer3_33: 7416390470971259670
+      Background_Eye_Layer3_34: -8539958017087810823
+      Background_Eye_Layer3_35: -487148435800006017
+      Background_Eye_Layer3_36: -4370125358651529292
+      Background_Eye_Layer3_37: 6086575091776681522
+      Background_Eye_Layer3_38: 2355220490188771887
+      Background_Eye_Layer3_39: -7600031599096473305
+      Background_Eye_Layer3_4: 5466423313104314657
+      Background_Eye_Layer3_40: -2987264146635876316
+      Background_Eye_Layer3_41: 3287344210566397780
+      Background_Eye_Layer3_42: -6015706560078619961
+      Background_Eye_Layer3_43: -7853174511791656647
+      Background_Eye_Layer3_44: -6680498451768313915
+      Background_Eye_Layer3_45: 4693737428464635005
+      Background_Eye_Layer3_46: -3118116620206127656
+      Background_Eye_Layer3_47: 1418390356015979267
+      Background_Eye_Layer3_48: 3600313156841856145
+      Background_Eye_Layer3_49: -6458824877754841644
+      Background_Eye_Layer3_5: 626543226470677783
+      Background_Eye_Layer3_50: 5903241502380409072
+      Background_Eye_Layer3_51: 4683800554445304071
+      Background_Eye_Layer3_52: -2393431425498825459
+      Background_Eye_Layer3_53: 3258957086364343511
+      Background_Eye_Layer3_54: -7840155533374534284
+      Background_Eye_Layer3_55: -7833459491334005395
+      Background_Eye_Layer3_56: 1894319800602316604
+      Background_Eye_Layer3_57: 5824923445917985979
+      Background_Eye_Layer3_58: -2290798195490791499
+      Background_Eye_Layer3_59: -6308845359834761149
+      Background_Eye_Layer3_6: -100880430694883144
+      Background_Eye_Layer3_60: 1382572769284060714
+      Background_Eye_Layer3_61: 1222977680260857480
+      Background_Eye_Layer3_62: -1442356062304171573
+      Background_Eye_Layer3_63: 4935899096129876791
+      Background_Eye_Layer3_64: -4893105313363646771
+      Background_Eye_Layer3_65: -5835851682113623760
+      Background_Eye_Layer3_66: -4502242633948755210
+      Background_Eye_Layer3_67: 2044300949257702972
+      Background_Eye_Layer3_68: -582953250396346933
+      Background_Eye_Layer3_69: -5416234800268660732
+      Background_Eye_Layer3_7: -6402784611750747162
+      Background_Eye_Layer3_70: 6074727326057789332
+      Background_Eye_Layer3_71: 4151295180499627365
+      Background_Eye_Layer3_72: -1555360627713161220
+      Background_Eye_Layer3_73: -5746513688209809700
+      Background_Eye_Layer3_74: 7901318120150199161
+      Background_Eye_Layer3_75: 8787314622895350346
+      Background_Eye_Layer3_76: -7797601337775437459
+      Background_Eye_Layer3_77: -5874437732658574251
+      Background_Eye_Layer3_78: -4357977737512861465
+      Background_Eye_Layer3_79: 2866860668323366776
+      Background_Eye_Layer3_8: 8430906023021464545
+      Background_Eye_Layer3_9: 2916599878809270891
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

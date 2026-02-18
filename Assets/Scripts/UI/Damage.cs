@@ -8,8 +8,7 @@ public class Damage : MonoBehaviour
     {
         StartCoroutine(Hit());
         StartCoroutine(Hit());
-        StartCoroutine(Heal());
-        StartCoroutine(Increase());
+        StartCoroutine(Hit());
     }
 
     IEnumerator Hit()
