@@ -20,5 +20,11 @@ namespace Misc
         }
 
         public void SetDirection(int direction) => _dir = direction;
+
+        private void OnCollisionEnter2D(Collision2D other)
+        {
+            // Do damage to enemies here
+            Destroy(transform.parent.gameObject);
+        }
     }
 }
