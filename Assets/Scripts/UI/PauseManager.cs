@@ -12,6 +12,7 @@ public class PauseManager : MonoBehaviour
     [SerializeField] private GameObject deathScreen;
     [SerializeField] private GameObject playerUI;
     [SerializeField] private Image fadeImage;
+    [SerializeField] private Image timerImage;
     [SerializeField] private Camera mainCamera;
     [SerializeField] private DialogueRunner dialogueRunner;
     [SerializeField] private AudioMixer audioMixer;
@@ -37,6 +38,7 @@ public class PauseManager : MonoBehaviour
     {
         SafeSetActive(pauseMenu, false);
         ApplyCursor(false);
+        timerImage.fillAmount = 0;
     }
 
     void OnDisable()
@@ -145,6 +147,13 @@ public class PauseManager : MonoBehaviour
 
         StartCoroutine(DeathSequence());
     }
+
+    public void StartTimer(float duration)
+    {
+        timerImage.fillAmount = 1;
+
+        StartCoroutine(FillToZero(duration));
+    }
     
     private IEnumerator DeathSequence()
     {
@@ -176,6 +185,21 @@ public class PauseManager : MonoBehaviour
 
         c.a = to;
         fadeImage.color = c;
+    }
+
+    private IEnumerator FillToZero(float duration)
+    {
+        float start = timerImage.fillAmount;
+        float t = 0f;
+
+        while (t < duration)
+        {
+            t += Time.deltaTime;
+            timerImage.fillAmount = Mathf.Lerp(start, 0f, t / duration);
+            yield return null;
+        }
+
+        timerImage.fillAmount = 0f;
     }
     
 }
