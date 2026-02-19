@@ -1,0 +1,466 @@
+fileFormatVersion: 2
+guid: b89a15f6ed11ade48bbf444c378b814e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5013851060475242056
+    second: Brain_Lightning_0
+  - first:
+      213: 3989929114491576317
+    second: Brain_Lightning_1
+  - first:
+      213: 1969604623695709719
+    second: Brain_Lightning_2
+  - first:
+      213: 8984534025523705476
+    second: Brain_Lightning_3
+  - first:
+      213: -1690658305638984136
+    second: Brain_Lightning_4
+  - first:
+      213: 1744479457463944792
+    second: Brain_Lightning_5
+  - first:
+      213: -9089906597728564291
+    second: Brain_Lightning_6
+  - first:
+      213: -6778955099543229880
+    second: Brain_Lightning_7
+  - first:
+      213: 2165175760444058511
+    second: Brain_Lightning_8
+  - first:
+      213: -8669199645833591017
+    second: Brain_Lightning_9
+  - first:
+      213: -2251871891567904854
+    second: Brain_Lightning_10
+  - first:
+      213: -6311126313333019388
+    second: Brain_Lightning_11
+  - first:
+      213: 4180662032875434484
+    second: Brain_Lightning_12
+  - first:
+      213: 1164310227992293915
+    second: Brain_Lightning_13
+  - first:
+      213: -8888535368110004380
+    second: Brain_Lightning_14
+  - first:
+      213: 2835661443320823090
+    second: Brain_Lightning_15
+  - first:
+      213: -4577784448605978361
+    second: Brain_Lightning_16
+  - first:
+      213: 796136232372958290
+    second: Brain_Lightning_17
+  - first:
+      213: -3230470597446547994
+    second: Brain_Lightning_18
+  - first:
+      213: -5841812189332657606
+    second: Brain_Lightning_19
+  - first:
+      213: -5100468403649294980
+    second: Brain_Lightning_20
+  - first:
+      213: -1846055884311906977
+    second: Brain_Lightning_21
+  - first:
+      213: 8914334557728197817
+    second: Brain_Lightning_22
+  - first:
+      213: -3097207192701526887
+    second: Brain_Lightning_23
+  - first:
+      213: 2950387281880811191
+    second: Brain_Lightning_24
+  - first:
+      213: -1849037587689846713
+    second: Brain_Lightning_25
+  - first:
+      213: -4038516837027973791
+    second: Brain_Lightning_26
+  - first:
+      213: -3227056138055546913
+    second: Brain_Lightning_27
+  - first:
+      213: -5557149212229630400
+    second: Brain_Lightning_28
+  - first:
+      213: -432031719103655251
+    second: Brain_Lightning_29
+  - first:
+      213: 610360924627470210
+    second: Brain_Lightning_30
+  - first:
+      213: 5488643979838445753
+    second: Brain_Lightning_31
+  - first:
+      213: 8628573101596134596
+    second: Brain_Lightning_32
+  - first:
+      213: 3098895537459253579
+    second: Brain_Lightning_33
+  - first:
+      213: 3479428050127000010
+    second: Brain_Lightning_34
+  - first:
+      213: -3196711763468613240
+    second: Brain_Lightning_35
+  - first:
+      213: -8823048535684742722
+    second: Brain_Lightning_36
+  - first:
+      213: 8302767443640672159
+    second: Brain_Lightning_37
+  - first:
+      213: -1675099000080561426
+    second: Brain_Lightning_38
+  - first:
+      213: 6678949004370435951
+    second: Brain_Lightning_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Brain_Lightning_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 59
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b958a766093b6ab0800000000000000
+      internalID: -5013851060475242056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brain_Lightning_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 62
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 716895748f0755b10800000000000000
+      internalID: 1969604623695709719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brain_Lightning_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 62
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83613df7a339988e0800000000000000
+      internalID: -1690658305638984136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brain_Lightning_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 62
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbbc8e81c1a2ad180800000000000000
+      internalID: -9089906597728564291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brain_Lightning_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 62
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8bed8de1ef3c0e10800000000000000
+      internalID: 2165175760444058511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brain_Lightning_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 63
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa7786f027ebfb0e0800000000000000
+      internalID: -2251871891567904854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brain_Lightning_12
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 62
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f1b08308f1b40a30800000000000000
+      internalID: 4180662032875434484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brain_Lightning_13
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 60
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b12b5dbcbf5782010800000000000000
+      internalID: 1164310227992293915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4107b0c3a04130349be0855288f15c79
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Brain_Lightning_0: -5013851060475242056
+      Brain_Lightning_1: 3989929114491576317
+      Brain_Lightning_10: -2251871891567904854
+      Brain_Lightning_11: -6311126313333019388
+      Brain_Lightning_12: 4180662032875434484
+      Brain_Lightning_13: 1164310227992293915
+      Brain_Lightning_14: -8888535368110004380
+      Brain_Lightning_15: 2835661443320823090
+      Brain_Lightning_16: -4577784448605978361
+      Brain_Lightning_17: 796136232372958290
+      Brain_Lightning_18: -3230470597446547994
+      Brain_Lightning_19: -5841812189332657606
+      Brain_Lightning_2: 1969604623695709719
+      Brain_Lightning_20: -5100468403649294980
+      Brain_Lightning_21: -1846055884311906977
+      Brain_Lightning_22: 8914334557728197817
+      Brain_Lightning_23: -3097207192701526887
+      Brain_Lightning_24: 2950387281880811191
+      Brain_Lightning_25: -1849037587689846713
+      Brain_Lightning_26: -4038516837027973791
+      Brain_Lightning_27: -3227056138055546913
+      Brain_Lightning_28: -5557149212229630400
+      Brain_Lightning_29: -432031719103655251
+      Brain_Lightning_3: 8984534025523705476
+      Brain_Lightning_30: 610360924627470210
+      Brain_Lightning_31: 5488643979838445753
+      Brain_Lightning_32: 8628573101596134596
+      Brain_Lightning_33: 3098895537459253579
+      Brain_Lightning_34: 3479428050127000010
+      Brain_Lightning_35: -3196711763468613240
+      Brain_Lightning_36: -8823048535684742722
+      Brain_Lightning_37: 8302767443640672159
+      Brain_Lightning_38: -1675099000080561426
+      Brain_Lightning_39: 6678949004370435951
+      Brain_Lightning_4: -1690658305638984136
+      Brain_Lightning_5: 1744479457463944792
+      Brain_Lightning_6: -9089906597728564291
+      Brain_Lightning_7: -6778955099543229880
+      Brain_Lightning_8: 2165175760444058511
+      Brain_Lightning_9: -8669199645833591017
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
