@@ -47,4 +47,9 @@ public class HeartBeat : MonoBehaviour
         _animator.SetBool(IsBeating, false);
         StartCoroutine(Beat());
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        PhaseManager.Instance.DamageHeart();
+    }
 }
