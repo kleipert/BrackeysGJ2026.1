@@ -6,26 +6,35 @@ public class PlayerSplit : MonoBehaviour
 {
     [Header("Ground Check")]
     [SerializeField] private LayerMask whatIsGround;
-    public Transform playerGroundCheck;
-    [SerializeField] private float groundCheckDistance = .05f;
-    
-    [SerializeField] GameObject playerImage;
-    [SerializeField] float splitTimeScale = 0.2f;
-    [SerializeField] float splitDuration = 5f;
+    [SerializeField] private Transform playerGroundCheck;
+    [SerializeField] private float groundCheckDistance = 0.05f;
+
+    [Header("Split")]
+    [SerializeField] private GameObject playerImage;
+    [SerializeField] private float splitTimeScale = 0.2f;
+    [SerializeField] private float splitDuration = 5f;
 
     private const float baseFixedDeltaTime = 0.02f;
 
     private bool _isActivated;
-    private bool _canSplit;
+    private bool _canSplit = true;
     private GameObject _clone;
     private Coroutine _countdownRoutine;
+
+    private bool _needsAirborneBeforeResplit;
 
     private float SplitWait => splitDuration / 5f;
 
     public void OnSplit(InputAction.CallbackContext ctx)
     {
         if (!ctx.performed) return;
-        if (_isActivated) EndSplit();
+        
+        if (_isActivated)
+        {
+            EndSplit();
+            return;
+        }
+
         if (!_canSplit) return;
 
         StartSplit();
@@ -35,10 +44,12 @@ public class PlayerSplit : MonoBehaviour
     {
         _isActivated = true;
         _canSplit = false;
-        
+        _needsAirborneBeforeResplit = true;
+
         _clone = Instantiate(playerImage, transform.position, Quaternion.identity);
 
-        PauseManager.Instance.StartTimer(SplitWait);
+        if (PauseManager.Instance != null)
+            PauseManager.Instance.StartTimer(SplitWait);
 
         Time.timeScale = splitTimeScale;
         Time.fixedDeltaTime = baseFixedDeltaTime * Time.timeScale;
@@ -55,14 +66,14 @@ public class PlayerSplit : MonoBehaviour
     private void EndSplit()
     {
         if (!_isActivated) return;
-        
+
         if (_countdownRoutine != null)
         {
             StopCoroutine(_countdownRoutine);
             _countdownRoutine = null;
         }
 
-        if (_clone)
+        if (_clone != null)
         {
             Destroy(_clone);
             _clone = null;
@@ -73,14 +84,27 @@ public class PlayerSplit : MonoBehaviour
 
         _isActivated = false;
     }
-    
+
     private void Update()
     {
-        if(!_canSplit) _canSplit = IsPlayerOnGround();
+        bool grounded = IsPlayerOnGround();
+
+        if (!_canSplit)
+        {
+            if (_needsAirborneBeforeResplit)
+            {
+                if (!grounded) _needsAirborneBeforeResplit = false;
+            }
+            else
+            {
+                if (grounded) _canSplit = true;
+            }
+        }
     }
-    
+
     private bool IsPlayerOnGround()
     {
+        if (!playerGroundCheck) return false;
         return Physics2D.Raycast(playerGroundCheck.position, Vector2.down, groundCheckDistance, whatIsGround);
     }
 }
