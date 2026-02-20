@@ -3,16 +3,25 @@ using UnityEngine;
 
 public class PhaseManager : MonoBehaviour
 {
+    private static readonly int IsVurneable = Animator.StringToHash("IsVurneable");
+
     [SerializeField] private GameObject phase1;
     [SerializeField] private GameObject phase2;
     [SerializeField] private GameObject phase3;
+
     [SerializeField] private GameObject shield;
+
     [SerializeField] private Transform heartCenter;
     [SerializeField] private LayerMask playerMask;
+
+    [SerializeField] private Animator animator;
+
     [SerializeField] private float ejectRadius = 3f;
-    [SerializeField] private float ejectOutForce = 8f;     
-    [SerializeField] private float ejectUpForce = 6f;    
-    [SerializeField] private float shieldColliderDelay = 0.15f;
+    [SerializeField] private float ejectOutForce = 8f;
+    [SerializeField] private float ejectUpForce = 6f;
+
+    [SerializeField] private float shieldActivateDelay = 0.15f;
+
     [SerializeField] private int healthHeart = 3;
 
     public static PhaseManager Instance { get; private set; }
@@ -20,7 +29,8 @@ public class PhaseManager : MonoBehaviour
     private int _currentPhaseIndex = 0;
     private bool _waitingForHeartDamage = false;
 
-    private Collider2D shieldCollider;
+    private Collider2D _shieldCollider;
+    private Coroutine _shieldRoutine;
 
     private void Awake()
     {
@@ -31,8 +41,8 @@ public class PhaseManager : MonoBehaviour
         }
         Instance = this;
 
-        if (!shieldCollider && shield)
-            shieldCollider = shield.GetComponent<Collider2D>();
+        if (shield)
+            _shieldCollider = shield.GetComponent<Collider2D>();
     }
 
     private void Start()
@@ -44,18 +54,19 @@ public class PhaseManager : MonoBehaviour
         _currentPhaseIndex = 0;
         _waitingForHeartDamage = false;
 
-        SetShieldActive(true, immediateCollider: true);
+        SetShieldActive(true);
+        if (animator) animator.SetBool(IsVurneable, false);
     }
 
     private void Update()
     {
         if (!_waitingForHeartDamage && AreAllDirectChildrenInactive(GetCurrentPhase()))
         {
-            SetShieldActive(false, immediateCollider: true);
+            SetShieldActive(false);
+            if (animator) animator.SetBool(IsVurneable, true);
             _waitingForHeartDamage = true;
         }
     }
-
 
     public void DamageHeart()
     {
@@ -72,16 +83,51 @@ public class PhaseManager : MonoBehaviour
 
             SwitchPhase(from, to);
             
-            SetShieldActive(true, immediateCollider: false);
-            EjectPlayersFromHeart2D();
-            StartCoroutine(EnableShieldColliderDelayed());
-
+            if (animator) animator.SetBool(IsVurneable, false);
             _waitingForHeartDamage = false;
+            
+            EjectPlayersFromHeart2D();
+            
+            EnableShieldAfterDelay();
         }
         else
         {
-            SetShieldActive(false, immediateCollider: true);
+            SetShieldActive(false);
         }
+    }
+
+    private void EnableShieldAfterDelay()
+    {
+        if (!shield) return;
+
+        if (_shieldRoutine != null)
+            StopCoroutine(_shieldRoutine);
+
+        _shieldRoutine = StartCoroutine(EnableShieldRoutine());
+    }
+
+    private IEnumerator EnableShieldRoutine()
+    {
+        SetShieldActive(false);
+        
+        yield return new WaitForFixedUpdate();
+
+        yield return new WaitForSeconds(shieldActivateDelay);
+
+        SetShieldActive(true);
+    }
+
+    private void SetShieldActive(bool active)
+    {
+        if (!shield) return;
+
+        shield.SetActive(active);
+        
+        if (!_shieldCollider)
+            _shieldCollider = shield.GetComponent<Collider2D>();
+
+        if (_shieldCollider)
+            _shieldCollider.enabled = active;
     }
 
     private void SwitchPhase(GameObject from, GameObject to)
@@ -100,27 +146,6 @@ public class PhaseManager : MonoBehaviour
         };
     }
 
-    private void SetShieldActive(bool active, bool immediateCollider)
-    {
-        if (!shield) return;
-
-        shield.SetActive(active);
-
-        if (!shieldCollider && shield)
-            shieldCollider = shield.GetComponent<Collider2D>();
-
-        if (!shieldCollider) return;
-
-        if (!active)
-        {
-            shieldCollider.enabled = false;
-        }
-        else
-        {
-            shieldCollider.enabled = immediateCollider;
-        }
-    }
-
     private bool AreAllDirectChildrenInactive(GameObject parent)
     {
         if (!parent) return true;
@@ -130,7 +155,7 @@ public class PhaseManager : MonoBehaviour
             if (child.gameObject.activeInHierarchy)
                 return false;
         }
-        return true; 
+        return true;
     }
 
     private void EjectPlayersFromHeart2D()
@@ -138,8 +163,6 @@ public class PhaseManager : MonoBehaviour
         if (!heartCenter) return;
 
         Vector2 heartPos = heartCenter.position;
-
-        // 2D-Overlap!
         Collider2D[] hits = Physics2D.OverlapCircleAll(heartPos, ejectRadius, playerMask);
 
         foreach (var h in hits)
@@ -149,32 +172,14 @@ public class PhaseManager : MonoBehaviour
             Rigidbody2D rb = h.attachedRigidbody;
             if (!rb) continue;
 
-            // Richtung: vom Herz weg + nach oben
             Vector2 dir = (rb.position - heartPos);
             if (dir.sqrMagnitude < 0.0001f) dir = Vector2.right;
             dir = dir.normalized;
 
             Vector2 impulse = dir * ejectOutForce + Vector2.up * ejectUpForce;
 
-            rb.linearVelocity = Vector2.zero;                 
-            rb.AddForce(impulse, ForceMode2D.Impulse);  
+            rb.linearVelocity = Vector2.zero; 
+            rb.AddForce(impulse, ForceMode2D.Impulse);
         }
     }
-
-    private IEnumerator EnableShieldColliderDelayed()
-    {
-        if (!shieldCollider) yield break;
-
-        shieldCollider.enabled = false;
-        yield return new WaitForSeconds(shieldColliderDelay);
-        shieldCollider.enabled = true;
-    }
-
-#if UNITY_EDITOR
-    private void OnDrawGizmosSelected()
-    {
-        if (!heartCenter) return;
-        Gizmos.DrawWireSphere(heartCenter.position, ejectRadius);
-    }
-#endif
 }

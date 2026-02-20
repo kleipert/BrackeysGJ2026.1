@@ -217,42 +217,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2615511749863940571, guid: e2f9e95adecec7f4bb324433a1b239c3, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 6277901144038315015, guid: 511369616a421dc41aa712a73075b187, type: 3}
-    - target: {fileID: 3048907810094890791, guid: e2f9e95adecec7f4bb324433a1b239c3, type: 3}
-      propertyPath: m_text
-      value: "MISSION FAILED\n \n REDEPLOY REQUIRED"
-      objectReference: {fileID: 0}
-    - target: {fileID: 3048907810094890791, guid: e2f9e95adecec7f4bb324433a1b239c3, type: 3}
-      propertyPath: m_fontSize
-      value: 54
-      objectReference: {fileID: 0}
-    - target: {fileID: 3048907810094890791, guid: e2f9e95adecec7f4bb324433a1b239c3, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 7569574bbd3666e4bad3d88a71da7436, type: 2}
-    - target: {fileID: 3048907810094890791, guid: e2f9e95adecec7f4bb324433a1b239c3, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 54
-      objectReference: {fileID: 0}
-    - target: {fileID: 3048907810094890791, guid: e2f9e95adecec7f4bb324433a1b239c3, type: 3}
-      propertyPath: m_TextWrappingMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3048907810094890791, guid: e2f9e95adecec7f4bb324433a1b239c3, type: 3}
-      propertyPath: m_VerticalAlignment
-      value: 512
-      objectReference: {fileID: 0}
-    - target: {fileID: 3048907810094890791, guid: e2f9e95adecec7f4bb324433a1b239c3, type: 3}
-      propertyPath: m_HorizontalAlignment
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3048907810094890791, guid: e2f9e95adecec7f4bb324433a1b239c3, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4643590383272184228, guid: e2f9e95adecec7f4bb324433a1b239c3, type: 3}
       propertyPath: mainCamera
       value: 
@@ -1073,6 +1037,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8be651d3904c2044699b080e462032f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerSplit
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 0
+  playerGroundCheck: {fileID: 0}
+  groundCheckDistance: 0.05
   playerImage: {fileID: 1402586387}
   splitTimeScale: 0.25
   splitDuration: 5
