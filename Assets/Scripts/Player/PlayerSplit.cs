@@ -1,45 +1,86 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerSplit : MonoBehaviour
 {
+    [Header("Ground Check")]
+    [SerializeField] private LayerMask whatIsGround;
+    public Transform playerGroundCheck;
+    [SerializeField] private float groundCheckDistance = .05f;
+    
     [SerializeField] GameObject playerImage;
     [SerializeField] float splitTimeScale = 0.2f;
     [SerializeField] float splitDuration = 5f;
 
     private const float baseFixedDeltaTime = 0.02f;
-    private bool _isActivated;
-    private bool _corountineStarted;
-    private GameObject _clone;
 
-    private void Update()
+    private bool _isActivated;
+    private bool _canSplit;
+    private GameObject _clone;
+    private Coroutine _countdownRoutine;
+
+    private float SplitWait => splitDuration / 5f;
+
+    public void OnSplit(InputAction.CallbackContext ctx)
     {
-        if (_isActivated && !_corountineStarted) StartCoroutine(CountdownEvent());
+        if (!ctx.performed) return;
+        if (_isActivated) EndSplit();
+        if (!_canSplit) return;
+
+        StartSplit();
     }
 
-    public void OnSplit()
+    private void StartSplit()
     {
-        if (_isActivated) return;
-
         _isActivated = true;
-        _clone = Instantiate(playerImage, transform.position, Quaternion.identity);
+        _canSplit = false;
         
-        PauseManager.Instance.StartTimer(splitDuration / 5);
+        _clone = Instantiate(playerImage, transform.position, Quaternion.identity);
+
+        PauseManager.Instance.StartTimer(SplitWait);
 
         Time.timeScale = splitTimeScale;
         Time.fixedDeltaTime = baseFixedDeltaTime * Time.timeScale;
+
+        _countdownRoutine = StartCoroutine(CountdownEvent());
     }
 
-    IEnumerator CountdownEvent()
+    private IEnumerator CountdownEvent()
     {
-        _corountineStarted = true;
-        yield return new WaitForSeconds(splitDuration / 5);
+        yield return new WaitForSeconds(SplitWait);
+        EndSplit();
+    }
+
+    private void EndSplit()
+    {
+        if (!_isActivated) return;
         
-        if (_clone) Destroy(_clone);
-        
+        if (_countdownRoutine != null)
+        {
+            StopCoroutine(_countdownRoutine);
+            _countdownRoutine = null;
+        }
+
+        if (_clone)
+        {
+            Destroy(_clone);
+            _clone = null;
+        }
+
         Time.timeScale = 1f;
         Time.fixedDeltaTime = baseFixedDeltaTime;
+
         _isActivated = false;
-        _corountineStarted = false;
+    }
+    
+    private void Update()
+    {
+        if(!_canSplit) _canSplit = IsPlayerOnGround();
+    }
+    
+    private bool IsPlayerOnGround()
+    {
+        return Physics2D.Raycast(playerGroundCheck.position, Vector2.down, groundCheckDistance, whatIsGround);
     }
 }

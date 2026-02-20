@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4432384263755013128}
   - component: {fileID: 8154024227004939728}
   - component: {fileID: 1033151388180149800}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: PlayerSplitGO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
