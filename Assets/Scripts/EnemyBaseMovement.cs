@@ -6,18 +6,21 @@ public class EnemyBaseMovement : MonoBehaviour
     protected Rigidbody2D Rb { get; private set; }
     
     [SerializeField] protected LayerMask whatIsGround;
-    [SerializeField] private float _groundCheckDistance;
-    [SerializeField] private float _wallCheckDistance;
+    [SerializeField] protected LayerMask whatIsEnemy;
+    [SerializeField] protected float _groundCheckDistance;
+    [SerializeField] protected float _wallCheckDistance;
     [SerializeField] protected Transform groundCheck;
     [SerializeField] protected Transform wallCheck;
 
     [SerializeField] protected float movementSpeed;
     
-    protected bool GroundDetected { get; private set; }
-    protected bool WallDetected { get; private set; }
+    protected bool GroundDetected { get; set; }
+    protected bool WallDetected { get; set; }
+    
+    protected bool EnemyDetected { get; set; }
 
     private bool _facingRight = true;
-    protected int FacingDirection { get; private set; } = 1;
+    protected int FacingDirection { get; set; } = 1;
     
     protected virtual void Awake()
     {
@@ -26,9 +29,10 @@ public class EnemyBaseMovement : MonoBehaviour
 
     protected virtual void Update()
     {
+        HandleEnemyCollision();
         HandleGroundCollision();
         SetVelocity(FacingDirection * movementSpeed, Rb.linearVelocity.y);
-        if(WallDetected || !GroundDetected)
+        if(WallDetected || !GroundDetected || EnemyDetected)
             Flip();
     }
     
@@ -39,6 +43,12 @@ public class EnemyBaseMovement : MonoBehaviour
         WallDetected = Physics2D.Raycast(wallCheck.position, Vector2.right * FacingDirection,
             _wallCheckDistance, whatIsGround);
             
+    }
+
+    protected virtual void HandleEnemyCollision()
+    {
+        EnemyDetected = Physics2D.Raycast(wallCheck.position, Vector2.right * FacingDirection,
+            .5f, whatIsEnemy);
     }
     
     public void SetVelocity(float xVelo, float yVelo)
@@ -61,7 +71,7 @@ public class EnemyBaseMovement : MonoBehaviour
         else if (xVelo < 0 && _facingRight)
             Flip();
     }
-    
+
     protected virtual void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
