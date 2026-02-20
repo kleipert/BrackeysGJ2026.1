@@ -17,7 +17,5 @@ public class EnemyContactWithPlayer : MonoBehaviour
                 _hitColliders.Clear();
             }
         }
-
-
     }
 }
