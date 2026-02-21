@@ -6,6 +6,7 @@ namespace Misc
     public class PhysicalLaserBeam : MonoBehaviour
     {
         [SerializeField] private float _travelSpeed = 5f;
+        [SerializeField] private AudioClip _audioClip;
         private int _dir;
         private Transform _parent;
 
@@ -25,6 +26,7 @@ namespace Misc
         {
             // Do damage to enemies here
             Destroy(transform.parent.gameObject);
+            SoundManager.Instance.PlaySound(_audioClip, transform, 0.3f);
         }
     }
 }

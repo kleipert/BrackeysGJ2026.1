@@ -19,6 +19,9 @@ namespace Player
         [SerializeField] private bool _doubleJumpUsed;
         public bool IsGrounded { get; private set; }
         public int FacingDirection { get; private set; } = 1;
+        
+        [Header("Sound")]
+        [SerializeField] private AudioClip _jumpSound;
     
         private Rigidbody2D _rb;
         private Vector2 _moveInput;
@@ -68,6 +71,7 @@ namespace Player
             if (IsGrounded && _jumpPressed)
             {
                 _rb.AddForceY(_jumpForce, ForceMode2D.Impulse);
+                SoundManager.Instance.PlaySound(_jumpSound, transform,0.3f, 1);
                 return;
             }
             if(_jumpPressed && !_doubleJumpUsed)
@@ -75,6 +79,7 @@ namespace Player
                 _doubleJumpUsed = true;
                 _rb.linearVelocityY = 0;
                 _rb.AddForceY(_doubleJumpForce, ForceMode2D.Impulse);
+                SoundManager.Instance.PlaySound(_jumpSound, transform,0.3f,1f);
             }
         }
     

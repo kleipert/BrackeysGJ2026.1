@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class Vessel : MonoBehaviour
 {
+    [SerializeField] private AudioClip _audioclip;
+    
     private void OnCollisionEnter2D(Collision2D other)
     {
         {
@@ -13,6 +15,7 @@ public class Vessel : MonoBehaviour
             else
             {
                 Destroy(gameObject);
+                SoundManager.Instance.PlaySound(_audioclip, transform, 0.3f);
             }
         }
     }

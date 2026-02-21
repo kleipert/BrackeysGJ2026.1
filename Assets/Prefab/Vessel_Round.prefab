@@ -164,3 +164,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb86722bf603b6e4fb4f9c30079130dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Vessel
+  _audioclip: {fileID: 8300000, guid: cc6b7794ad85baa4a850d4365b17a997, type: 3}
