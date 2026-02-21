@@ -19,6 +19,7 @@ namespace Player
         [SerializeField] private bool _doubleJumpUsed;
         public bool IsGrounded { get; private set; }
         public int FacingDirection { get; private set; } = 1;
+        [SerializeField] private bool _canDoubleJump = true;
         
         [Header("Sound")]
         [SerializeField] private AudioClip _jumpSound;
@@ -74,7 +75,7 @@ namespace Player
                 SoundManager.Instance.PlaySound(_jumpSound, transform,0.3f, 1);
                 return;
             }
-            if(_jumpPressed && !_doubleJumpUsed)
+            if(_jumpPressed && !_doubleJumpUsed && _canDoubleJump)
             {
                 _doubleJumpUsed = true;
                 _rb.linearVelocityY = 0;
