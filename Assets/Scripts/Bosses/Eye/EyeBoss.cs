@@ -9,6 +9,9 @@ public class EyeBoss : MonoBehaviour
     [SerializeField] private GameObject laser;
     [SerializeField] private float turnSpeed;
     [SerializeField] private bool _isActive;
+    [Header("Sound")]
+    [SerializeField] private AudioClip _laserBeam;
+    [SerializeField] private AudioClip _laserLoad;
     
     private bool _inAttack;
     private Animator _animator;
@@ -43,16 +46,18 @@ public class EyeBoss : MonoBehaviour
 
     IEnumerator StartAttack()
     {
+        SoundManager.Instance.PlaySound(_laserLoad,transform,1f,5);
         yield return new WaitForSeconds(5f);
         laser.SetActive(true);
         _animator.SetBool(IsAttacking, true);
 
-        yield return new WaitForSeconds(10f);
+        SoundManager.Instance.PlaySound(_laserBeam,transform,0.3f,5);
+        yield return new WaitForSecondsRealtime(10f);
         _animator.SetBool(IsAttacking, false);
         _animator.SetBool(IsVulnerable, true);
         laser.SetActive(false);
 
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(10f);
         _animator.SetBool(IsVulnerable, false);
         _inAttack = false;
     }
