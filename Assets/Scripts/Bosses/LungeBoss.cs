@@ -15,15 +15,12 @@ public class LungeBoss : MonoBehaviour
 
     [SerializeField] private GameObject tornadoPrefab;
     [SerializeField] private Transform tornadoSpawnPoint;
-    [SerializeField] private float tornadoInterval = 1f;
-
-    private float tornadoTimer = 0f;
-    private bool attackStarted = false;
 
     private Rigidbody2D rb;
     private float timer = 0f;
 
     private int sideSwitchCount = 0;
+    private bool tornadoSpawned = false;
 
     void Start()
     {
@@ -73,7 +70,6 @@ public class LungeBoss : MonoBehaviour
         }
     }
 
-
     void Wait()
     {
         rb.linearVelocity = Vector2.zero;
@@ -94,7 +90,6 @@ public class LungeBoss : MonoBehaviour
         }
     }
 
-
     void MoveToMiddle()
     {
         float direction = Mathf.Sign(middle - transform.position.x);
@@ -106,7 +101,6 @@ public class LungeBoss : MonoBehaviour
             state = BossState.WaitInMiddle;
         }
     }
-
 
     void WaitInMiddle()
     {
@@ -120,7 +114,6 @@ public class LungeBoss : MonoBehaviour
         }
     }
 
-
     void FlyUp()
     {
         if (transform.position.y < flyLimitY)
@@ -131,19 +124,19 @@ public class LungeBoss : MonoBehaviour
 
         rb.linearVelocity = Vector2.zero;
 
-        attackStarted = true;
-
-        tornadoTimer += Time.deltaTime;
-
-        if (tornadoTimer >= tornadoInterval)
+        if (!tornadoSpawned)
         {
-            tornadoTimer = 0f;
-            SpawnTornado();
+            SpawnTornados();
+            tornadoSpawned = true;
         }
     }
 
-    void SpawnTornado()
+    void SpawnTornados()
     {
-        Instantiate(tornadoPrefab, tornadoSpawnPoint.position, Quaternion.identity);
+        GameObject t1 = Instantiate(tornadoPrefab, tornadoSpawnPoint.position, Quaternion.identity);
+        t1.GetComponent<TornadoMovement>().direction = 1;
+
+        GameObject t2 = Instantiate(tornadoPrefab, tornadoSpawnPoint.position, Quaternion.identity);
+        t2.GetComponent<TornadoMovement>().direction = -1;
     }
 }

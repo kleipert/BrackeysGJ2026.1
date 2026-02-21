@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1626584394200177793}
   - component: {fileID: 422484636413426997}
   - component: {fileID: -6887396171895841673}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Tornado_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 6
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2105305842262875611, guid: ae23115cc818ab14b98ebcf20eb9b681, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -176,10 +176,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TornadoMovement
   fallSpeed: 2
-  moveSpeed: 4
+  moveSpeed: 8
   groundLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
+  leftLimit: 12
+  rightLimit: 18
+  direction: 0
 --- !u!50 &-6887396171895841673
 Rigidbody2D:
   serializedVersion: 5
@@ -206,4 +209,4 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
