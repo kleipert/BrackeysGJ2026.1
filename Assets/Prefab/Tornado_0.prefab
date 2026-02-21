@@ -180,8 +180,9 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
-  leftLimit: 12
-  rightLimit: 18
+  leftLimit: 7
+  rightLimit: 26
+  lifeTime: 10
   direction: 0
 --- !u!50 &-6887396171895841673
 Rigidbody2D:

@@ -6250,7 +6250,7 @@ Tilemap:
       - {fileID: -969258895, guid: 95a9556d3220e984d8558fe6c42d6100, type: 3}
       - {fileID: -969258895, guid: 95a9556d3220e984d8558fe6c42d6100, type: 3}
       - {fileID: 1002646543, guid: 95a9556d3220e984d8558fe6c42d6100, type: 3}
-      m_AnimationSpeed: 5
+      m_AnimationSpeed: 5.0000005
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 2, y: -13, z: 0}
@@ -6520,7 +6520,7 @@ Tilemap:
       - {fileID: 1510043363, guid: 95a9556d3220e984d8558fe6c42d6100, type: 3}
       - {fileID: -709861391, guid: 95a9556d3220e984d8558fe6c42d6100, type: 3}
       - {fileID: 1849122027, guid: 95a9556d3220e984d8558fe6c42d6100, type: 3}
-      m_AnimationSpeed: 5
+      m_AnimationSpeed: 5.0000005
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 25, y: -13, z: 0}
@@ -9044,7 +9044,7 @@ Tilemap:
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: -1, y: -26, z: 0}
-  m_Size: {x: 40, y: 27, z: 1}
+  m_Size: {x: 30, y: 27, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -9120,7 +9120,7 @@ TilemapRenderer:
   m_SortOrder: 0
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
---- !u!114 &7417458153512469402
+--- !u!114 &2286808727702498668
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

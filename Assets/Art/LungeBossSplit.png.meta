@@ -1,0 +1,1444 @@
+fileFormatVersion: 2
+guid: 3d825d603ee4db142a5e478299ae589a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1300856488444615580
+    second: LungeBossSplit_0
+  - first:
+      213: -2085646220380302617
+    second: LungeBossSplit_1
+  - first:
+      213: -5230611546029138464
+    second: LungeBossSplit_2
+  - first:
+      213: -5030248766742284328
+    second: LungeBossSplit_3
+  - first:
+      213: -6076849785561087807
+    second: LungeBossSplit_4
+  - first:
+      213: -8143971688587470085
+    second: LungeBossSplit_5
+  - first:
+      213: 6392229718164097154
+    second: LungeBossSplit_6
+  - first:
+      213: -140538920474369878
+    second: LungeBossSplit_7
+  - first:
+      213: 3335630223999593246
+    second: LungeBossSplit_8
+  - first:
+      213: 6077629805540557559
+    second: LungeBossSplit_9
+  - first:
+      213: -1053953003329639396
+    second: LungeBossSplit_10
+  - first:
+      213: -692183465588135606
+    second: LungeBossSplit_11
+  - first:
+      213: 8286091329823701344
+    second: LungeBossSplit_12
+  - first:
+      213: 289901863814068282
+    second: LungeBossSplit_13
+  - first:
+      213: -5153744059989042727
+    second: LungeBossSplit_14
+  - first:
+      213: -454828387444817341
+    second: LungeBossSplit_15
+  - first:
+      213: -5632157312441071712
+    second: LungeBossSplit_16
+  - first:
+      213: 3689126760818674063
+    second: LungeBossSplit_17
+  - first:
+      213: 3462496778135472527
+    second: LungeBossSplit_18
+  - first:
+      213: 7970415462654163191
+    second: LungeBossSplit_19
+  - first:
+      213: -3923347968234184884
+    second: LungeBossSplit_20
+  - first:
+      213: -6373662573714760809
+    second: LungeBossSplit_21
+  - first:
+      213: 7566407363190305606
+    second: LungeBossSplit_22
+  - first:
+      213: 4971034176218265941
+    second: LungeBossSplit_23
+  - first:
+      213: -8334603375744650043
+    second: LungeBossSplit_24
+  - first:
+      213: 2218595190499160144
+    second: LungeBossSplit_25
+  - first:
+      213: -2782758944773786993
+    second: LungeBossSplit_26
+  - first:
+      213: 8160441085624910195
+    second: LungeBossSplit_27
+  - first:
+      213: 5303471736113125737
+    second: LungeBossSplit_28
+  - first:
+      213: 1030155462646140531
+    second: LungeBossSplit_29
+  - first:
+      213: 8276426068033676191
+    second: LungeBossSplit_30
+  - first:
+      213: 6057712377546653023
+    second: LungeBossSplit_31
+  - first:
+      213: -4360816530003991911
+    second: LungeBossSplit_32
+  - first:
+      213: 5013544791517987512
+    second: LungeBossSplit_33
+  - first:
+      213: 8955185414907497641
+    second: LungeBossSplit_34
+  - first:
+      213: 2769755901090690672
+    second: LungeBossSplit_35
+  - first:
+      213: 7933483920918373725
+    second: LungeBossSplit_36
+  - first:
+      213: -1258866530421318534
+    second: LungeBossSplit_37
+  - first:
+      213: -8592717254593078416
+    second: LungeBossSplit_38
+  - first:
+      213: -5822579736007141197
+    second: LungeBossSplit_39
+  - first:
+      213: -8435764550409502161
+    second: LungeBossSplit_40
+  - first:
+      213: 8627882462038398759
+    second: LungeBossSplit_41
+  - first:
+      213: 3928029801892779535
+    second: LungeBossSplit_42
+  - first:
+      213: -8455622308181373213
+    second: LungeBossSplit_43
+  - first:
+      213: -5202626634775495546
+    second: LungeBossSplit_44
+  - first:
+      213: -4811800620320730536
+    second: LungeBossSplit_45
+  - first:
+      213: -4583950897827866835
+    second: LungeBossSplit_46
+  - first:
+      213: -98011050684625726
+    second: LungeBossSplit_47
+  - first:
+      213: -3399454284642652379
+    second: LungeBossSplit_48
+  - first:
+      213: 8987206401311508888
+    second: LungeBossSplit_49
+  - first:
+      213: 3956008798498775134
+    second: LungeBossSplit_50
+  - first:
+      213: -5080405948177457343
+    second: LungeBossSplit_51
+  - first:
+      213: -6901309166347080347
+    second: LungeBossSplit_52
+  - first:
+      213: 638695931574233903
+    second: LungeBossSplit_53
+  - first:
+      213: -5606530281848110067
+    second: LungeBossSplit_54
+  - first:
+      213: 3233323319232309787
+    second: LungeBossSplit_55
+  - first:
+      213: -3811391158501519904
+    second: LungeBossSplit_56
+  - first:
+      213: 2622787122714383235
+    second: LungeBossSplit_57
+  - first:
+      213: -8224481701824305243
+    second: LungeBossSplit_58
+  - first:
+      213: -3939054164396059090
+    second: LungeBossSplit_59
+  - first:
+      213: -1046102253917547695
+    second: LungeBossSplit_60
+  - first:
+      213: -7455496456564602269
+    second: LungeBossSplit_61
+  - first:
+      213: 704737185571958315
+    second: LungeBossSplit_62
+  - first:
+      213: 7874595217060434198
+    second: LungeBossSplit_63
+  - first:
+      213: 810384103753844102
+    second: LungeBossSplit_64
+  - first:
+      213: -8305250636360057194
+    second: LungeBossSplit_65
+  - first:
+      213: 8631898026709144651
+    second: LungeBossSplit_66
+  - first:
+      213: 4666416972002243731
+    second: LungeBossSplit_67
+  - first:
+      213: -8613817977805781422
+    second: LungeBossSplit_68
+  - first:
+      213: 8041360447917778658
+    second: LungeBossSplit_69
+  - first:
+      213: -4164735782884621048
+    second: LungeBossSplit_70
+  - first:
+      213: -4801607794852992758
+    second: LungeBossSplit_71
+  - first:
+      213: 5392482411419607099
+    second: LungeBossSplit_72
+  - first:
+      213: -6283705702819806735
+    second: LungeBossSplit_73
+  - first:
+      213: -1839071760523899092
+    second: LungeBossSplit_74
+  - first:
+      213: -4054228669294467867
+    second: LungeBossSplit_75
+  - first:
+      213: -650550771307077994
+    second: LungeBossSplit_76
+  - first:
+      213: 3946149110093720955
+    second: LungeBossSplit_77
+  - first:
+      213: 1881531772896956474
+    second: LungeBossSplit_78
+  - first:
+      213: 4632090703281856998
+    second: LungeBossSplit_79
+  - first:
+      213: -5343461052565025894
+    second: LungeBossSplit_80
+  - first:
+      213: -1258237500539973013
+    second: LungeBossSplit_81
+  - first:
+      213: 7646822247378054910
+    second: LungeBossSplit_82
+  - first:
+      213: -4557060073244427915
+    second: LungeBossSplit_83
+  - first:
+      213: -6286439930164456993
+    second: LungeBossSplit_84
+  - first:
+      213: -6510155830905819716
+    second: LungeBossSplit_85
+  - first:
+      213: 4276029902474320778
+    second: LungeBossSplit_86
+  - first:
+      213: -8597063477339322949
+    second: LungeBossSplit_87
+  - first:
+      213: -8495237517601552283
+    second: LungeBossSplit_88
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LungeBossSplit_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9bd08185129d0210800000000000000
+      internalID: 1300856488444615580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LungeBossSplit_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e2981310db4e03e0800000000000000
+      internalID: -2085646220380302617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LungeBossSplit_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ed50e803822967b0800000000000000
+      internalID: -5230611546029138464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LungeBossSplit_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d7ba76e567f03ab0800000000000000
+      internalID: -5030248766742284328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LungeBossSplit_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c0093a0151baaba0800000000000000
+      internalID: -6076849785561087807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LungeBossSplit_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfad7e8d5eccafe80800000000000000
+      internalID: -8143971688587470085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LungeBossSplit_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 288cdd9af03c5b850800000000000000
+      internalID: 6392229718164097154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LungeBossSplit_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa02200b894bc0ef0800000000000000
+      internalID: -140538920474369878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LungeBossSplit_8
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1b6d8b040a8a4e20800000000000000
+      internalID: 3335630223999593246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LungeBossSplit_9
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f242938b14185450800000000000000
+      internalID: 6077629805540557559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LungeBossSplit_10
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1ca49ad35b9f51f0800000000000000
+      internalID: -1053953003329639396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LungeBossSplit_11
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a49683e2eced466f0800000000000000
+      internalID: -692183465588135606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LungeBossSplit_12
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 069f592b92c1ef270800000000000000
+      internalID: 8286091329823701344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LungeBossSplit_13
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a387c5c8530f50400800000000000000
+      internalID: 289901863814068282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LungeBossSplit_14
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d9d21945193a78b0800000000000000
+      internalID: -5153744059989042727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LungeBossSplit_15
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 342869ccdff10b9f0800000000000000
+      internalID: -454828387444817341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LungeBossSplit_16
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a7c4d8c3ce86d1b0800000000000000
+      internalID: -5632157312441071712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LungeBossSplit_17
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f890cfd3e39623330800000000000000
+      internalID: 3689126760818674063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LungeBossSplit_18
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8903b089724d0030800000000000000
+      internalID: 3462496778135472527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LungeBossSplit_19
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f838cb52aa9c9e60800000000000000
+      internalID: 7970415462654163191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LungeBossSplit_20
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4f96274fc77d89c0800000000000000
+      internalID: -3923347968234184884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LungeBossSplit_21
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79b978788a33c87a0800000000000000
+      internalID: -6373662573714760809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LungeBossSplit_22
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 643bbd48867410960800000000000000
+      internalID: 7566407363190305606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LungeBossSplit_23
+      rect:
+        serializedVersion: 2
+        x: 2944
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 559f0dfde39acf440800000000000000
+      internalID: 4971034176218265941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LungeBossSplit_24
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c4f7fc636a855c80800000000000000
+      internalID: -8334603375744650043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LungeBossSplit_25
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 050b71632980ace10800000000000000
+      internalID: 2218595190499160144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LungeBossSplit_26
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f82b731cb77a169d0800000000000000
+      internalID: -2782758944773786993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LungeBossSplit_27
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3710d277ee5bf3170800000000000000
+      internalID: 8160441085624910195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LungeBossSplit_28
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 969d85be177b99940800000000000000
+      internalID: 5303471736113125737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LungeBossSplit_29
+      rect:
+        serializedVersion: 2
+        x: 3712
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37e837e6fe8db4e00800000000000000
+      internalID: 1030155462646140531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LungeBossSplit_30
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f932ee298a5cbd270800000000000000
+      internalID: 8276426068033676191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LungeBossSplit_31
+      rect:
+        serializedVersion: 2
+        x: 3968
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5db72fef41511450800000000000000
+      internalID: 6057712377546653023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LungeBossSplit_32
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 992e57678744b73c0800000000000000
+      internalID: -4360816530003991911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LungeBossSplit_33
+      rect:
+        serializedVersion: 2
+        x: 4224
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b280fbcc60b39540800000000000000
+      internalID: 5013544791517987512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LungeBossSplit_34
+      rect:
+        serializedVersion: 2
+        x: 4352
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ac025130b5374c70800000000000000
+      internalID: 8955185414907497641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LungeBossSplit_35
+      rect:
+        serializedVersion: 2
+        x: 4480
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0767d073156207620800000000000000
+      internalID: 2769755901090690672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LungeBossSplit_36
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d55ec99b795691e60800000000000000
+      internalID: 7933483920918373725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LungeBossSplit_37
+      rect:
+        serializedVersion: 2
+        x: 4736
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7cdb927f8b978ee0800000000000000
+      internalID: -1258866530421318534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LungeBossSplit_38
+      rect:
+        serializedVersion: 2
+        x: 4864
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07b1c90ee2980c880800000000000000
+      internalID: -8592717254593078416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LungeBossSplit_39
+      rect:
+        serializedVersion: 2
+        x: 4992
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b818e6549a023fa0800000000000000
+      internalID: -5822579736007141197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LungeBossSplit_40
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f22420406d42eea80800000000000000
+      internalID: -8435764550409502161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LungeBossSplit_41
+      rect:
+        serializedVersion: 2
+        x: 5248
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7271f9103656cb770800000000000000
+      internalID: 8627882462038398759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LungeBossSplit_42
+      rect:
+        serializedVersion: 2
+        x: 5376
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0697f01b4a238630800000000000000
+      internalID: 3928029801892779535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LungeBossSplit_43
+      rect:
+        serializedVersion: 2
+        x: 5504
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ee0bfd7f4897aa80800000000000000
+      internalID: -8455622308181373213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LungeBossSplit_44
+      rect:
+        serializedVersion: 2
+        x: 5632
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68c783fe3ae8cc7b0800000000000000
+      internalID: -5202626634775495546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LungeBossSplit_45
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85257cf64dc093db0800000000000000
+      internalID: -4811800620320730536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 1c65241d109a5434e99e1b55f1642056
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      LungeBossSplit_0: 1300856488444615580
+      LungeBossSplit_1: -2085646220380302617
+      LungeBossSplit_10: -1053953003329639396
+      LungeBossSplit_11: -692183465588135606
+      LungeBossSplit_12: 8286091329823701344
+      LungeBossSplit_13: 289901863814068282
+      LungeBossSplit_14: -5153744059989042727
+      LungeBossSplit_15: -454828387444817341
+      LungeBossSplit_16: -5632157312441071712
+      LungeBossSplit_17: 3689126760818674063
+      LungeBossSplit_18: 3462496778135472527
+      LungeBossSplit_19: 7970415462654163191
+      LungeBossSplit_2: -5230611546029138464
+      LungeBossSplit_20: -3923347968234184884
+      LungeBossSplit_21: -6373662573714760809
+      LungeBossSplit_22: 7566407363190305606
+      LungeBossSplit_23: 4971034176218265941
+      LungeBossSplit_24: -8334603375744650043
+      LungeBossSplit_25: 2218595190499160144
+      LungeBossSplit_26: -2782758944773786993
+      LungeBossSplit_27: 8160441085624910195
+      LungeBossSplit_28: 5303471736113125737
+      LungeBossSplit_29: 1030155462646140531
+      LungeBossSplit_3: -5030248766742284328
+      LungeBossSplit_30: 8276426068033676191
+      LungeBossSplit_31: 6057712377546653023
+      LungeBossSplit_32: -4360816530003991911
+      LungeBossSplit_33: 5013544791517987512
+      LungeBossSplit_34: 8955185414907497641
+      LungeBossSplit_35: 2769755901090690672
+      LungeBossSplit_36: 7933483920918373725
+      LungeBossSplit_37: -1258866530421318534
+      LungeBossSplit_38: -8592717254593078416
+      LungeBossSplit_39: -5822579736007141197
+      LungeBossSplit_4: -6076849785561087807
+      LungeBossSplit_40: -8435764550409502161
+      LungeBossSplit_41: 8627882462038398759
+      LungeBossSplit_42: 3928029801892779535
+      LungeBossSplit_43: -8455622308181373213
+      LungeBossSplit_44: -5202626634775495546
+      LungeBossSplit_45: -4811800620320730536
+      LungeBossSplit_5: -8143971688587470085
+      LungeBossSplit_6: 6392229718164097154
+      LungeBossSplit_7: -140538920474369878
+      LungeBossSplit_8: 3335630223999593246
+      LungeBossSplit_9: 6077629805540557559
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
