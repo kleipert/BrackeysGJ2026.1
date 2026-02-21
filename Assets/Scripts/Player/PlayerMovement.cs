@@ -9,7 +9,7 @@ namespace Player
         [Header("Ground Check")]
         [SerializeField] private LayerMask _whatIsGround;
         public Transform _playerGroundCheck;
-        [SerializeField] private float _groundCheckDistance = .05f;
+        [SerializeField] private float _groundCheckDistance = .1f;
     
         [Header("Movement")]
         [SerializeField] private float _movementSpeed = 5f;

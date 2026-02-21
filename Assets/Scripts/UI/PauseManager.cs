@@ -201,6 +201,19 @@ public class PauseManager : MonoBehaviour
 
         timerImage.fillAmount = 0f;
     }
+
+    public void LoadNextScene()
+    {
+        StartCoroutine(LevelSwitch());
+    }
+    
+    private IEnumerator LevelSwitch()
+    {
+        yield return FadeAlpha(0f, 1f, fadeDuration);
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+    
     
 }
 

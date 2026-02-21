@@ -1,4 +1,5 @@
 using System.Collections;
+using Player;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -45,8 +46,13 @@ public class PlayerSplit : MonoBehaviour
         _isActivated = true;
         _canSplit = false;
         _needsAirborneBeforeResplit = true;
-
+        
         _clone = Instantiate(playerImage, transform.position, Quaternion.identity);
+        var playerPos = _clone.transform.position;
+        playerPos.y += 1;
+        transform.position = playerPos;
+        GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
+        
 
         if (PauseManager.Instance != null)
             PauseManager.Instance.StartTimer(SplitWait);
