@@ -127,3 +127,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dadc74a84a4a574dbee58f13732aba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightningImpact
+  thunder: {fileID: 8300000, guid: f9ac79f639581b844a02b325c2d98ee8, type: 3}
+  lightning: {fileID: 8300000, guid: 8a5dc4468418f2e4a8ef40d726824233, type: 3}

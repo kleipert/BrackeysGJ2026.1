@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2847771717795787554}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3055774032337654930}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BeamStartPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79,7 +79,8 @@ GameObject:
   - component: {fileID: 1183428608784531723}
   - component: {fileID: 1285144947039277002}
   - component: {fileID: 7905653882760233711}
-  m_Layer: 0
+  - component: {fileID: 6012162406805002803}
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -176,7 +177,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   _whatIsGround:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 192
   _playerGroundCheck: {fileID: 2847771717795787554}
   _groundCheckDistance: 0.05
   _movementSpeed: 3
@@ -184,6 +185,7 @@ MonoBehaviour:
   _jumpForce: 7
   _doubleJumpForce: 4.5
   _doubleJumpUsed: 0
+  _jumpSound: {fileID: 8300000, guid: 5f00048875c16e9408019b53ac739f76, type: 3}
   _sprintPressed: 0
 --- !u!114 &5145183161803060249
 MonoBehaviour:
@@ -307,7 +309,7 @@ MonoBehaviour:
       - m_Target: {fileID: 7905653882760233711}
         m_TargetAssemblyTypeName: PlayerSplit, Assembly-CSharp
         m_MethodName: OnSplit
-        m_Mode: 1
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -480,6 +482,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Player.PlayerShoot
   _laserBeamPrefab: {fileID: 2228598044328636985, guid: e8c2373a05390f64484ecf782ccb2182, type: 3}
   _shootingPosition: {fileID: 3055774032337654930}
+  _audioClip: {fileID: 8300000, guid: c01e2e7dcf9df724dacbccb0c7378e45, type: 3}
 --- !u!114 &7905653882760233711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -492,6 +495,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8be651d3904c2044699b080e462032f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerSplit
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 64
+  playerGroundCheck: {fileID: 2847771717795787554}
+  groundCheckDistance: 0.05
   playerImage: {fileID: 7903002493047415128, guid: 3e83bfb153cc15a4c8619474c3016d0e, type: 3}
   splitTimeScale: 0.2
   splitDuration: 5
+  splitStart: {fileID: 8300000, guid: 1b0c61cfd12c0d049b4866a86a65e554, type: 3}
+  splitEnd: {fileID: 8300000, guid: d855467fef0ac674d8e223ca29005a5b, type: 3}
+--- !u!81 &6012162406805002803
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7946985056269935574}
+  m_Enabled: 1

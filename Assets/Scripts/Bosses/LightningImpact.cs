@@ -5,6 +5,10 @@ namespace Bosses
 {
     public class LightningImpact : MonoBehaviour
     {
+        [Header("Sound")] 
+        [SerializeField] private AudioClip thunder;
+        [SerializeField] private AudioClip lightning;
+        
         private Animator _anim;
         private int _mode = 0;
         private static readonly int LightningMode = Animator.StringToHash("lightningMode");
@@ -12,6 +16,7 @@ namespace Bosses
         private void Start()
         {
             _anim = GetComponent<Animator>();
+            SoundManager.Instance.PlaySound(thunder, transform, 0.3f);
             _anim.SetInteger(LightningMode, _mode);
         }
 
@@ -23,6 +28,7 @@ namespace Bosses
         private void AnimationDone()
         {
             // Damage player
+            SoundManager.Instance.PlaySound(lightning, transform, 0.3f);
             Destroy(gameObject);
         }
     }
