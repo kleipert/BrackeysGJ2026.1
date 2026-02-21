@@ -99,7 +99,20 @@ public class PauseManager : MonoBehaviour
     public void Restart()
     {
         Resume();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        StartCoroutine(ReloadCurrentScene());
+
+    }
+
+    IEnumerator ReloadCurrentScene()
+    {
+        Scene currentScene = SceneManager.GetActiveScene();
+        int buildIndex = currentScene.buildIndex;
+
+        yield return SceneManager.UnloadSceneAsync(buildIndex);
+        yield return SceneManager.LoadSceneAsync(buildIndex, LoadSceneMode.Additive);
+
+        Scene newScene = SceneManager.GetSceneByBuildIndex(buildIndex);
+        SceneManager.SetActiveScene(newScene);
     }
     
     public void Quit()
@@ -201,19 +214,5 @@ public class PauseManager : MonoBehaviour
 
         timerImage.fillAmount = 0f;
     }
-
-    public void LoadNextScene()
-    {
-        StartCoroutine(LevelSwitch());
-    }
-    
-    private IEnumerator LevelSwitch()
-    {
-        yield return FadeAlpha(0f, 1f, fadeDuration);
-
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-    }
-    
-    
 }
 

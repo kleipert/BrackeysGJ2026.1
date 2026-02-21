@@ -79,9 +79,32 @@ public class HealthManager : MonoBehaviour
             healthBar[maxHealth].enabled = true;
 
         maxHealth++;
+        if(GameStats.Instance)
+            GameStats.Instance.PlayerHPMax = maxHealth;
         currentHealth = maxHealth;
         
         for (int i = 0; i < maxHealth; i++)
+        {
+            if (healthBar[i] == null) continue;
+            healthBar[i].enabled = true;
+            var anim = healthBar[i].GetComponent<Animator>();
+            if (anim != null)
+                anim.SetBool("Lost", false);
+        }
+    }
+    
+    public void SetMaxHealth(int amount)
+    {
+        if (amount >= healthBar.Length) return;
+        
+        if (healthBar[amount] != null)
+            healthBar[amount].enabled = true;
+        
+        if(GameStats.Instance)
+            GameStats.Instance.PlayerHPMax = amount;
+        currentHealth = amount;
+        
+        for (int i = 0; i < amount; i++)
         {
             if (healthBar[i] == null) continue;
 
@@ -90,6 +113,8 @@ public class HealthManager : MonoBehaviour
                 anim.SetBool("Lost", false);
         }
     }
+    
+    
 
     IEnumerator Invincible()
     {

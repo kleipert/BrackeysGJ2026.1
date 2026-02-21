@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using Yarn.Unity;
 using UnityEngine.SceneManagement;
@@ -19,6 +20,22 @@ public class SceneSwitcher : MonoBehaviour
 
     void Switch()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        StartCoroutine(LoadNextScene());
+    }
+    
+    IEnumerator LoadNextScene()
+    {
+        var oldIdx = SceneManager.GetActiveScene().buildIndex;
+        var newIdx = oldIdx + 1;
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(newIdx, LoadSceneMode.Additive);
+
+        // Wait until the asynchronous scene fully loads
+        while (!asyncLoad.isDone)
+        {
+            yield return null;
+        }
+        var newScene = SceneManager.GetSceneByBuildIndex(newIdx);
+        SceneManager.SetActiveScene(newScene);
+        SceneManager.UnloadSceneAsync(oldIdx);
     }
 }

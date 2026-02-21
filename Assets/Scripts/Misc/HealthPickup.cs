@@ -1,5 +1,5 @@
-using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Misc
 {
@@ -16,6 +16,8 @@ namespace Misc
             
             HealthManager.Instance.IncreaseHealth();
             HealthManager.Instance.Heal(10);
+            if(GameStats.Instance)
+                GameStats.Instance.SetHealthItemPickedUp(SceneManager.GetActiveScene().buildIndex);
             Destroy(gameObject);
         }
     }
