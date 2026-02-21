@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,6 +8,7 @@ public class HealthManager : MonoBehaviour
 
     private int currentHealth;
     private int maxHealth;
+    private bool isInvincible;
 
     public static HealthManager Instance { get; private set; }
 
@@ -32,6 +34,8 @@ public class HealthManager : MonoBehaviour
     // ReSharper disable Unity.PerformanceAnalysis
     public void TakeDamage(int amount)
     {
+        if (isInvincible)  return;
+        
         currentHealth = Mathf.Clamp(currentHealth - amount, 0, maxHealth);
         
         for (int i = 0; i < maxHealth; i++)
@@ -47,6 +51,8 @@ public class HealthManager : MonoBehaviour
         {
             PauseManager.Instance.IsDead();
         }
+        
+        StartCoroutine(Invincible());
     }
 
     // ReSharper disable Unity.PerformanceAnalysis
@@ -83,5 +89,12 @@ public class HealthManager : MonoBehaviour
             if (anim != null)
                 anim.SetBool("Lost", false);
         }
+    }
+
+    IEnumerator Invincible()
+    {
+        isInvincible = true;
+        yield return new WaitForSeconds(3f);
+        isInvincible = false;
     }
 }

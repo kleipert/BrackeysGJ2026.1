@@ -176,7 +176,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   _whatIsGround:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 192
   _playerGroundCheck: {fileID: 2847771717795787554}
   _groundCheckDistance: 0.05
   _movementSpeed: 3
@@ -307,7 +307,7 @@ MonoBehaviour:
       - m_Target: {fileID: 7905653882760233711}
         m_TargetAssemblyTypeName: PlayerSplit, Assembly-CSharp
         m_MethodName: OnSplit
-        m_Mode: 1
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -492,6 +492,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8be651d3904c2044699b080e462032f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerSplit
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 64
+  playerGroundCheck: {fileID: 2847771717795787554}
+  groundCheckDistance: 0.05
   playerImage: {fileID: 7903002493047415128, guid: 3e83bfb153cc15a4c8619474c3016d0e, type: 3}
   splitTimeScale: 0.2
   splitDuration: 5
