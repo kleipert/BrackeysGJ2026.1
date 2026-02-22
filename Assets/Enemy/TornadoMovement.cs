@@ -54,7 +54,6 @@ public class TornadoMovement : MonoBehaviour
         if (LayerMask.LayerToName(collision.gameObject.layer) == "Ground")
         {
             onGround = true;
-            Debug.Log("hilfe");
 
         }
 
