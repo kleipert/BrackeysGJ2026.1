@@ -473,6 +473,7 @@ MonoBehaviour:
   _playerFound: 1
   _levelExit: {fileID: 844775792}
   _headObject: {fileID: 1091797853}
+  _hitSound: {fileID: 8300000, guid: ed49834980a0de64bb3a38262c195eae, type: 3}
 --- !u!212 &58090628
 SpriteRenderer:
   serializedVersion: 2
@@ -1389,7 +1390,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 9ab9816e84693e74d9ab0e9fd580403a, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.2
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
   Mute: 0

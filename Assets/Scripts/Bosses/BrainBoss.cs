@@ -49,6 +49,7 @@ namespace Bosses
         [SerializeField] private GameObject _levelExit;
         [SerializeField] private GameObject _headObject;
         
+        [SerializeField] private AudioClip _hitSound;
         
         private Animator _anim;
         private static readonly int IsIdle = Animator.StringToHash("isIdle");
@@ -84,6 +85,7 @@ namespace Bosses
         {
             _healthCurrent = _bossHealth.GetCurrentHealth();
             _headObject.SetActive(false);
+            SoundManager.Instance.PlaySound(_hitSound, transform,0.3f);
             StartCoroutine(EnableDamageZone());
         }
 
