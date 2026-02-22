@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1626584394200177793}
   - component: {fileID: 422484636413426997}
   - component: {fileID: -6887396171895841673}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: Tornado_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -151,7 +151,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.13284874, y: -0.033212066}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -161,7 +161,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1.1763382, y: 1.2427638}
   m_EdgeRadius: 0
 --- !u!114 &422484636413426997
 MonoBehaviour:
@@ -175,15 +175,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 547a132bac1d75d458552d52692f07f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TornadoMovement
-  fallSpeed: 2
-  moveSpeed: 8
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  leftLimit: 7
-  rightLimit: 26
-  lifeTime: 10
-  direction: 0
+  fallSpeed: 3
+  moveSpeed: 5
+  leftLimit: 4
+  rightLimit: 28
+  lifeTime: 8
+  onGround: 0
+  direction: 1
 --- !u!50 &-6887396171895841673
 Rigidbody2D:
   serializedVersion: 5
@@ -199,7 +197,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2

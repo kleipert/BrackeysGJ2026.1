@@ -1,142 +1,156 @@
 using UnityEngine;
+using System.Collections;
 
 public class LungeBoss : MonoBehaviour
 {
-    private enum BossState { Move, Wait, MoveToMiddle, WaitInMiddle, FlyUp }
-    private BossState state = BossState.Move;
+    [Header("Movement")]
+    public float leftX;
+    public float rightX;
+    public float moveSpeed = 3f;
+    private bool movingRight = true;
 
-    [SerializeField] private float speed = 1.5f;
-    [SerializeField] private float rightLimit = 6f;
-    [SerializeField] private float leftLimit = -6f;
-    [SerializeField] private float middle = 0f;
-    [SerializeField] private float waitTime = 1.5f;
-    [SerializeField] private float flySpeed = 3f;
-    [SerializeField] private float flyLimitY = 5f;
+    [Header("Hit Settings")]
+    public int hitsNeeded = 3;
+    private int currentHits = 0;
 
-    [SerializeField] private GameObject tornadoPrefab;
-    [SerializeField] private Transform tornadoSpawnPoint;
+    [Header("Rounds")]
+    public int totalRounds = 3;
+    private int currentRound = 1;
+
+    [Header("Fly Settings")]
+    public float flyHeight = 3f;
+    public float flySpeed = 5f;
+    public float stayInAirTime = 3f;
+
+    [Header("Tornado Settings")]
+    public GameObject tornadoPrefab;
+    public float tornadoOffsetX = 1.5f;
+    public float tornadoOffsetY = 0f;
 
     private Rigidbody2D rb;
-    private float timer = 0f;
+    private Animator anim;
 
-    private int sideSwitchCount = 0;
-    private bool tornadoSpawned = false;
+    private float groundY;
+    private bool isFlying = false;
+    private bool isInvincible = false;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+        groundY = transform.position.y;
     }
 
     void Update()
     {
-        switch (state)
+        if (!isFlying)
+            Patrol();
+    }
+
+    void Patrol()
+    {
+        if (movingRight)
         {
-            case BossState.Move:
-                MoveBetweenLimits();
-                break;
-
-            case BossState.Wait:
-                Wait();
-                break;
-
-            case BossState.MoveToMiddle:
-                MoveToMiddle();
-                break;
-
-            case BossState.WaitInMiddle:
-                WaitInMiddle();
-                break;
-
-            case BossState.FlyUp:
-                FlyUp();
-                break;
+            transform.position += Vector3.right * moveSpeed * Time.deltaTime;
+            if (transform.position.x >= rightX)
+                movingRight = false;
+        }
+        else
+        {
+            transform.position += Vector3.left * moveSpeed * Time.deltaTime;
+            if (transform.position.x <= leftX)
+                movingRight = true;
         }
     }
 
-    void MoveBetweenLimits()
+    private void OnCollisionEnter2D(Collision2D col)
     {
-        rb.linearVelocity = new Vector2(speed, 0);
-
-        if (transform.position.x >= rightLimit && speed > 0)
+        if (col.collider.CompareTag("Player") && !isInvincible)
         {
-            sideSwitchCount++;
-            state = BossState.Wait;
-        }
+            currentHits++;
 
-        if (transform.position.x <= leftLimit && speed < 0)
-        {
-            sideSwitchCount++;
-            state = BossState.Wait;
-        }
-    }
-
-    void Wait()
-    {
-        rb.linearVelocity = Vector2.zero;
-        timer += Time.deltaTime;
-
-        if (timer >= waitTime)
-        {
-            timer = 0f;
-
-            if (sideSwitchCount >= 4)
+            if (currentHits >= hitsNeeded)
             {
-                state = BossState.MoveToMiddle;
-                return;
+                StartCoroutine(FlyRoutine());
             }
-
-            speed = -speed;
-            state = BossState.Move;
         }
     }
 
-    void MoveToMiddle()
+    IEnumerator FlyRoutine()
     {
-        float direction = Mathf.Sign(middle - transform.position.x);
-        rb.linearVelocity = new Vector2(direction * Mathf.Abs(speed), 0);
+        isFlying = true;
+        isInvincible = true;
 
-        if (Mathf.Abs(transform.position.x - middle) < 0.1f)
+        rb.gravityScale = 0;
+
+        Vector3 upPos = new Vector3(transform.position.x, groundY + flyHeight, 0);
+        while (Vector3.Distance(transform.position, upPos) > 0.05f)
         {
-            rb.linearVelocity = Vector2.zero;
-            state = BossState.WaitInMiddle;
+            transform.position = Vector3.MoveTowards(transform.position, upPos, flySpeed * Time.deltaTime);
+            yield return null;
+        }
+
+        SpawnTornadoLeft();
+        yield return new WaitForSeconds(0.3f);
+        SpawnTornadoRight();
+
+        yield return new WaitForSeconds(stayInAirTime);
+
+        Vector3 downPos = new Vector3(transform.position.x, groundY, 0);
+        while (Vector3.Distance(transform.position, downPos) > 0.05f)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, downPos, flySpeed * Time.deltaTime);
+            yield return null;
+        }
+
+        rb.gravityScale = 3;
+
+        currentHits = 0;
+        isFlying = false;
+        isInvincible = false;
+
+        currentRound++;
+
+        if (currentRound > totalRounds)
+        {
+            StartCoroutine(FinalPhase());
+            yield break;
         }
     }
 
-    void WaitInMiddle()
+    void SpawnTornadoLeft()
     {
-        rb.linearVelocity = Vector2.zero;
-        timer += Time.deltaTime;
+        Vector3 spawnPos = new Vector3(
+            transform.position.x - tornadoOffsetX,
+            transform.position.y + tornadoOffsetY,
+            0
+        );
 
-        if (timer >= waitTime)
-        {
-            timer = 0f;
-            state = BossState.FlyUp;
-        }
+        GameObject t = Instantiate(tornadoPrefab, spawnPos, Quaternion.identity);
+        t.GetComponent<TornadoMovement>().direction = -1;
     }
 
-    void FlyUp()
+    void SpawnTornadoRight()
     {
-        if (transform.position.y < flyLimitY)
-        {
-            rb.linearVelocity = new Vector2(0, flySpeed);
-            return;
-        }
+        Vector3 spawnPos = new Vector3(
+            transform.position.x + tornadoOffsetX,
+            transform.position.y + tornadoOffsetY,
+            0
+        );
 
-        rb.linearVelocity = Vector2.zero;
-
-        if (!tornadoSpawned)
-        {
-            SpawnTornados();
-            tornadoSpawned = true;
-        }
+        GameObject t = Instantiate(tornadoPrefab, spawnPos, Quaternion.identity);
+        t.GetComponent<TornadoMovement>().direction = 1;
     }
 
-    void SpawnTornados()
+    IEnumerator FinalPhase()
     {
-        GameObject t1 = Instantiate(tornadoPrefab, tornadoSpawnPoint.position, Quaternion.identity);
-        t1.GetComponent<TornadoMovement>().direction = 1;
+        Debug.Log("Finale Phase startet!");
 
-        GameObject t2 = Instantiate(tornadoPrefab, tornadoSpawnPoint.position, Quaternion.identity);
-        t2.GetComponent<TornadoMovement>().direction = -1;
+        rb.gravityScale = 0;
+        anim.SetBool("Splitting", true);
+
+        yield return new WaitForSeconds(3.5f);
+
+        Destroy(gameObject);
     }
 }

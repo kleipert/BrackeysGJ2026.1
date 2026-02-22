@@ -2,17 +2,16 @@ using UnityEngine;
 
 public class TornadoMovement : MonoBehaviour
 {
-    public float fallSpeed = 5f;
-    public float moveSpeed = 2f;
-    public LayerMask groundLayer;
+    [SerializeField] private float fallSpeed = 5f;
+    [SerializeField] private float moveSpeed = 2f;
 
-    public float leftLimit = -6f;
-    public float rightLimit = 6f;
+    [SerializeField] private float leftLimit = -6f;
+    [SerializeField] private float rightLimit = 6f;
 
-    public float lifeTime = 5f; 
+    [SerializeField] private float lifeTime = 5f; 
 
-    private bool onGround = false;
-    [HideInInspector] public int direction;
+    [SerializeField]private bool onGround = false;
+    public int direction = 1;
 
     private Rigidbody2D rb;
     private float lifeTimer;
@@ -20,7 +19,7 @@ public class TornadoMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.gravityScale = 0;
+        //rb.gravityScale = 1;
 
         lifeTimer = lifeTime; 
     }
@@ -40,7 +39,7 @@ public class TornadoMovement : MonoBehaviour
         }
         else
         {
-            rb.linearVelocity = new Vector2(direction * moveSpeed, 0);
+            transform.Translate(Vector2.right * moveSpeed * Time.deltaTime * direction);
 
             if (transform.position.x >= rightLimit && direction > 0)
                 direction = -1;
@@ -52,9 +51,12 @@ public class TornadoMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (((1 << collision.gameObject.layer) & groundLayer) != 0)
+        if (LayerMask.LayerToName(collision.gameObject.layer) == "Ground")
         {
             onGround = true;
+            Debug.Log("hilfe");
+
         }
+
     }
 }
