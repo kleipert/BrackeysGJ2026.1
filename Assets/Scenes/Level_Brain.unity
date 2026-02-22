@@ -48636,21 +48636,9 @@ PrefabInstance:
       value: LevelExit
       objectReference: {fileID: 0}
     - target: {fileID: 5940618314636656650, guid: 76d3f59a7bcc01b4d851b3f465423f5d, type: 3}
-      propertyPath: afterBoss
-      value: 
-      objectReference: {fileID: 8300000, guid: 4e717f4224e209646bf063ea8601e0b4, type: 3}
-    - target: {fileID: 5940618314636656650, guid: 76d3f59a7bcc01b4d851b3f465423f5d, type: 3}
-      propertyPath: beforeBoss
-      value: 
-      objectReference: {fileID: 8300000, guid: 39dde01a294d2274ab881eb06579096f, type: 3}
-    - target: {fileID: 5940618314636656650, guid: 76d3f59a7bcc01b4d851b3f465423f5d, type: 3}
       propertyPath: dialogueRunner
       value: 
       objectReference: {fileID: 1552383582}
-    - target: {fileID: 5940618314636656650, guid: 76d3f59a7bcc01b4d851b3f465423f5d, type: 3}
-      propertyPath: beforeBossToggle
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
