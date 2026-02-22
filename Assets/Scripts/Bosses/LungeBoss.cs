@@ -1,5 +1,7 @@
+using System;
 using UnityEngine;
 using System.Collections;
+using Bosses;
 
 public class LungeBoss : MonoBehaviour
 {
@@ -11,7 +13,7 @@ public class LungeBoss : MonoBehaviour
 
     [Header("Hit Settings")]
     public int hitsNeeded = 3;
-    private int currentHits = 0;
+    [SerializeField] private int currentHits = 0;
 
     [Header("Rounds")]
     public int totalRounds = 3;
@@ -27,6 +29,10 @@ public class LungeBoss : MonoBehaviour
     public float tornadoOffsetX = 1.5f;
     public float tornadoOffsetY = 0f;
 
+    [SerializeField] private GameObject _headObject;
+    [SerializeField] private GameObject _levelExit;
+    private BossHealth _bossHP;
+
     private Rigidbody2D rb;
     private Animator anim;
 
@@ -36,9 +42,33 @@ public class LungeBoss : MonoBehaviour
 
     void Start()
     {
+        _bossHP = GetComponent<BossHealth>();
+        _bossHP.onDamageTaken += OnDamageTaken;
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         groundY = transform.position.y;
+    }
+
+    private void OnDamageTaken(object sender, EventArgs e)
+    {
+        currentHits++;
+        _headObject.SetActive(false);
+        StartCoroutine(EnableHeadZone());
+        if (currentHits >= hitsNeeded)
+        {
+            StartCoroutine(FlyRoutine());
+        }
+    }
+
+    private IEnumerator EnableHeadZone()
+    {
+        yield return new WaitForSeconds(3);
+        _headObject.SetActive(true);
+    }
+
+    private void OnDestroy()
+    {
+        _bossHP.onDamageTaken -= OnDamageTaken;
     }
 
     void Update()
@@ -67,7 +97,7 @@ public class LungeBoss : MonoBehaviour
     {
         if (col.collider.CompareTag("Player") && !isInvincible)
         {
-            currentHits++;
+            
 
             if (currentHits >= hitsNeeded)
             {
@@ -151,6 +181,7 @@ public class LungeBoss : MonoBehaviour
 
         yield return new WaitForSeconds(3.5f);
 
+        _levelExit.SetActive(true);
         Destroy(gameObject);
     }
 }
