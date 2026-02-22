@@ -19,6 +19,7 @@ public class EyeBoss : MonoBehaviour
     [Header("Sound")]
     [SerializeField] private AudioSource _laserBeam;
     [SerializeField] private AudioClip _laserLoad;
+    [SerializeField] private AudioClip _bossHit;
 
     [SerializeField] private GameObject _levelExitZone;
     [SerializeField] private GameObject _headZone;
@@ -38,6 +39,7 @@ public class EyeBoss : MonoBehaviour
     private void OnDamageTaken(object sender, EventArgs e)
     {
         _headZone.SetActive(false);
+        SoundManager.Instance.PlaySound(_bossHit, transform, 0.3f);
         if(_bossHealth.GetCurrentHealth() == 0)
             Destroy(gameObject);
     }

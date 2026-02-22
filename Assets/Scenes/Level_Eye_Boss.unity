@@ -210,6 +210,78 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dab3fd7a5cea6244bc9a91ca65c7ba7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeathWalll
+--- !u!1001 &12712777
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 71133148670875708, guid: 17d9d076f0eb13e4aac276e297275067, type: 3}
+      propertyPath: m_Name
+      value: Dialogue System Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 785491825676610114, guid: 17d9d076f0eb13e4aac276e297275067, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -44.34805
+      objectReference: {fileID: 0}
+    - target: {fileID: 785491825676610114, guid: 17d9d076f0eb13e4aac276e297275067, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -24.19468
+      objectReference: {fileID: 0}
+    - target: {fileID: 785491825676610114, guid: 17d9d076f0eb13e4aac276e297275067, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 785491825676610114, guid: 17d9d076f0eb13e4aac276e297275067, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 785491825676610114, guid: 17d9d076f0eb13e4aac276e297275067, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 785491825676610114, guid: 17d9d076f0eb13e4aac276e297275067, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 785491825676610114, guid: 17d9d076f0eb13e4aac276e297275067, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 785491825676610114, guid: 17d9d076f0eb13e4aac276e297275067, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 785491825676610114, guid: 17d9d076f0eb13e4aac276e297275067, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 785491825676610114, guid: 17d9d076f0eb13e4aac276e297275067, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686045622772568129, guid: 17d9d076f0eb13e4aac276e297275067, type: 3}
+      propertyPath: startNode
+      value: Switch
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 17d9d076f0eb13e4aac276e297275067, type: 3}
+--- !u!114 &28555834 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1686045622772568129, guid: 17d9d076f0eb13e4aac276e297275067, type: 3}
+  m_PrefabInstance: {fileID: 12712777}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bec29c0a230741bdac901dba8da47ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &32767016
 GameObject:
   m_ObjectHideFlags: 0
@@ -804,6 +876,7 @@ MonoBehaviour:
   vulnerableRotationZ: 90
   _laserBeam: {fileID: 572839543}
   _laserLoad: {fileID: 8300000, guid: e1531d77d0c5c19409e390187587f237, type: 3}
+  _bossHit: {fileID: 8300000, guid: ed49834980a0de64bb3a38262c195eae, type: 3}
   _levelExitZone: {fileID: 2008984791}
   _headZone: {fileID: 32767016}
 --- !u!95 &572839542
@@ -141810,6 +141883,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5940618314636656650, guid: 76d3f59a7bcc01b4d851b3f465423f5d, type: 3}
+      propertyPath: dialogueRunner
+      value: 
+      objectReference: {fileID: 28555834}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -142012,3 +142089,4 @@ SceneRoots:
   - {fileID: 1901551909}
   - {fileID: 32767018}
   - {fileID: 2008984790}
+  - {fileID: 12712777}
