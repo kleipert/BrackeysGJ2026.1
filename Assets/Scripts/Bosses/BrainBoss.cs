@@ -99,6 +99,7 @@ namespace Bosses
         {
             _bossHealth.onDamageTaken -= OnBossDamage;
             _levelExit.SetActive(true);
+            _levelExit = null;
         }
 
         void Update()

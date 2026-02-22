@@ -102,5 +102,7 @@ public class EyeBoss : MonoBehaviour
     {
         _bossHealth.onDamageTaken -= OnDamageTaken;
         _levelExitZone.SetActive(true);
+        _levelExitZone = null;
+        _bossHealth = null;
     }
 }

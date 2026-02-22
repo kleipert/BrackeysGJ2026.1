@@ -32,6 +32,10 @@ public class SceneSwitcher : MonoBehaviour
         Destroy(uiSystem);
         var player = GameObject.Find("Player");
         Destroy(player);
+
+        uiSystem = null;
+        player = null;
+        dialogueRunner = null;
             
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(newIdx, LoadSceneMode.Additive);
 

@@ -73,6 +73,7 @@ public class LungeBoss : MonoBehaviour
     private void OnDestroy()
     {
         _bossHP.onDamageTaken -= OnDamageTaken;
+        _bossHP = null;
     }
 
     void Update()
