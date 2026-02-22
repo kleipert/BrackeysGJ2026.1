@@ -14,7 +14,7 @@ public class CreateLaser : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Player"))
         {
-            HealthManager.Instance.TakeDamage(2);
+            HealthManager.Instance.TakeDamage(1);
         }
     }
 }

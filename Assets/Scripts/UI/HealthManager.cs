@@ -5,6 +5,9 @@ using UnityEngine.UI;
 public class HealthManager : MonoBehaviour
 {
     [SerializeField] private Image[] healthBar;
+    [SerializeField] private GameObject player;
+    [SerializeField] private AudioClip playerHit;
+    [SerializeField] private AudioClip playerDeath;
 
     private int currentHealth;
     private int maxHealth;
@@ -36,6 +39,8 @@ public class HealthManager : MonoBehaviour
     {
         if (isInvincible)  return;
         
+        SoundManager.Instance.PlaySound(playerHit,player.transform,0.3f);
+        
         currentHealth = Mathf.Clamp(currentHealth - amount, 0, maxHealth);
         
         for (int i = 0; i < maxHealth; i++)
@@ -50,6 +55,7 @@ public class HealthManager : MonoBehaviour
         if (currentHealth <= 0)
         {
             PauseManager.Instance.IsDead();
+            SoundManager.Instance.PlaySound(playerDeath,player.transform,0.3f,5f);
         }
         
         StartCoroutine(Invincible());

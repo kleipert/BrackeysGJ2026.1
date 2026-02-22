@@ -83,6 +83,7 @@ public class PauseManager : MonoBehaviour
         _isPaused = true;
 
         Time.timeScale = 0f;
+        AudioListener.pause = true;
         StartCoroutine(UnlockCursorRealtime());
     }
 
@@ -92,6 +93,7 @@ public class PauseManager : MonoBehaviour
         _isPaused = false;
 
         Time.timeScale = 1f;
+        AudioListener.pause = false;
         ApplyCursor(false);
         playerInput.SwitchCurrentActionMap("Player");
     }
@@ -122,7 +124,7 @@ public class PauseManager : MonoBehaviour
     
     public void SetVolume(float linearVolume)
     {
-        audioMixer.SetFloat("volume", linearVolume);
+        audioMixer.SetFloat("Volume", linearVolume);
     }
 
     private IEnumerator UnlockCursorRealtime()

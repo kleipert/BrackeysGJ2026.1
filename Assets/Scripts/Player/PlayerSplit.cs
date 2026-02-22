@@ -14,6 +14,10 @@ public class PlayerSplit : MonoBehaviour
     [SerializeField] private GameObject playerImage;
     [SerializeField] private float splitTimeScale = 0.2f;
     [SerializeField] private float splitDuration = 5f;
+    
+    [Header("Sound")]
+    [SerializeField] private AudioClip splitStart;
+    [SerializeField] private AudioClip splitEnd;
 
     private const float baseFixedDeltaTime = 0.02f;
 
@@ -57,6 +61,7 @@ public class PlayerSplit : MonoBehaviour
         if (PauseManager.Instance != null)
             PauseManager.Instance.StartTimer(SplitWait);
 
+        SoundManager.Instance.PlaySound(splitStart, transform, 0.3f);
         Time.timeScale = splitTimeScale;
         Time.fixedDeltaTime = baseFixedDeltaTime * Time.timeScale;
 
@@ -85,6 +90,7 @@ public class PlayerSplit : MonoBehaviour
             _clone = null;
         }
 
+        SoundManager.Instance.PlaySound(splitEnd, transform, 0.3f);
         Time.timeScale = 1f;
         Time.fixedDeltaTime = baseFixedDeltaTime;
 

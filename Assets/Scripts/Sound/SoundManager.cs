@@ -26,5 +26,4 @@ public class SoundManager : MonoBehaviour
         
         Destroy(soundObject.gameObject, clipLength);
     }
-    
 }

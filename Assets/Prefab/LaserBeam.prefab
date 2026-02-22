@@ -406,6 +406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Misc.PhysicalLaserBeam
   _travelSpeed: 15
+  _audioClip: {fileID: 8300000, guid: f9c0092f982ed564eb6051665cffd228, type: 3}
 --- !u!50 &5037772961525778323
 Rigidbody2D:
   serializedVersion: 5
