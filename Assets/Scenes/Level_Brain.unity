@@ -48373,6 +48373,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5145183161803060249, guid: 558d8b4d6cadcc24b853b69c20c24b49, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145183161803060249, guid: 558d8b4d6cadcc24b853b69c20c24b49, type: 3}
+      propertyPath: m_ActionEvents.Array.data[14].m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145183161803060249, guid: 558d8b4d6cadcc24b853b69c20c24b49, type: 3}
       propertyPath: m_ActionEvents.Array.data[16].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1986761940}
@@ -48628,9 +48636,21 @@ PrefabInstance:
       value: LevelExit
       objectReference: {fileID: 0}
     - target: {fileID: 5940618314636656650, guid: 76d3f59a7bcc01b4d851b3f465423f5d, type: 3}
+      propertyPath: afterBoss
+      value: 
+      objectReference: {fileID: 8300000, guid: 4e717f4224e209646bf063ea8601e0b4, type: 3}
+    - target: {fileID: 5940618314636656650, guid: 76d3f59a7bcc01b4d851b3f465423f5d, type: 3}
+      propertyPath: beforeBoss
+      value: 
+      objectReference: {fileID: 8300000, guid: 39dde01a294d2274ab881eb06579096f, type: 3}
+    - target: {fileID: 5940618314636656650, guid: 76d3f59a7bcc01b4d851b3f465423f5d, type: 3}
       propertyPath: dialogueRunner
       value: 
       objectReference: {fileID: 1552383582}
+    - target: {fileID: 5940618314636656650, guid: 76d3f59a7bcc01b4d851b3f465423f5d, type: 3}
+      propertyPath: beforeBossToggle
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -48724,6 +48744,10 @@ PrefabInstance:
       propertyPath: playerInput
       value: 
       objectReference: {fileID: 1763588766}
+    - target: {fileID: 4643590383272184228, guid: e2f9e95adecec7f4bb324433a1b239c3, type: 3}
+      propertyPath: dialogueRunner
+      value: 
+      objectReference: {fileID: 1552383582}
     - target: {fileID: 5495208232836183739, guid: e2f9e95adecec7f4bb324433a1b239c3, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
