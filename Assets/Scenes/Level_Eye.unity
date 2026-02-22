@@ -59401,6 +59401,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7554290480557784494, guid: 153a53b80a9952e47b504834ef33345a, type: 3}
+      propertyPath: _sceneId
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7554290480557784494, guid: 153a53b80a9952e47b504834ef33345a, type: 3}
       propertyPath: _healthIncreaseItem
       value: 
       objectReference: {fileID: 1795436674}

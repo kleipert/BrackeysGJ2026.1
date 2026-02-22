@@ -433,7 +433,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BrainMovement
   _attacksBeforeWeakMax: 6
   _attacksLeft: 3
-  _healthTotal: 1
+  _healthTotal: 3
   _healthCurrent: 0
   _movementSpeed: 5
   _movementSpeedMax: 5
@@ -628,7 +628,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8d44bc8d3a52524b903583628a96d7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bosses.BossHealth
-  _currentHealth: 1
+  _currentHealth: 3
 --- !u!1 &172820511
 GameObject:
   m_ObjectHideFlags: 0
