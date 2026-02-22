@@ -3638,6 +3638,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1285144947039277002, guid: 558d8b4d6cadcc24b853b69c20c24b49, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3288284732742114139, guid: 558d8b4d6cadcc24b853b69c20c24b49, type: 3}
       propertyPath: m_Size.x
       value: 0.7430639
@@ -3657,6 +3661,10 @@ PrefabInstance:
     - target: {fileID: 4599653035295709781, guid: 558d8b4d6cadcc24b853b69c20c24b49, type: 3}
       propertyPath: _groundCheckDistance
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145183161803060249, guid: 558d8b4d6cadcc24b853b69c20c24b49, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5145183161803060249, guid: 558d8b4d6cadcc24b853b69c20c24b49, type: 3}
       propertyPath: m_ActionEvents.Array.data[16].m_PersistentCalls.m_Calls.Array.data[0].m_Target
