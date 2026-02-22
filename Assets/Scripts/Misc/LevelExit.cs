@@ -19,7 +19,10 @@ namespace Misc
             var oldIdx = SceneManager.GetActiveScene().buildIndex;
             var newIdx = oldIdx + 1;
             
-            
+            var uiSystem = GameObject.Find("UISystem");
+            Destroy(uiSystem);
+            var player = GameObject.Find("Player");
+            Destroy(player);
             
             AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(newIdx, LoadSceneMode.Additive);
 
@@ -28,8 +31,6 @@ namespace Misc
             {
                 yield return null;
             }
-            
-            GameObject.Find("EventSystem").SetActive(false);
             SceneManager.UnloadSceneAsync(oldIdx);
             var newScene = SceneManager.GetSceneByBuildIndex(newIdx);
             SceneManager.SetActiveScene(newScene);

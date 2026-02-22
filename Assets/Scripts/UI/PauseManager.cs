@@ -101,22 +101,48 @@ public class PauseManager : MonoBehaviour
     public void Restart()
     {
         Resume();
-        StartCoroutine(ReloadCurrentScene());
-
+        ReloadCurrentScene();
     }
 
-    IEnumerator ReloadCurrentScene()
+    private void ReloadCurrentScene()
     {
+        var uiSystem = GameObject.Find("UISystem");
+        Destroy(uiSystem);
+        var player = GameObject.Find("Player");
+        Destroy(player);
+            
         Scene currentScene = SceneManager.GetActiveScene();
         int buildIndex = currentScene.buildIndex;
 
-        yield return SceneManager.UnloadSceneAsync(buildIndex);
-        yield return SceneManager.LoadSceneAsync(buildIndex, LoadSceneMode.Additive);
+        var statsScene = SceneManager.GetSceneByName("StatsScene");
+        SceneManager.SetActiveScene(statsScene);
 
-        Scene newScene = SceneManager.GetSceneByBuildIndex(buildIndex);
-        SceneManager.SetActiveScene(newScene);
+        StartCoroutine(UnloadSameScene(buildIndex));
+        StartCoroutine(LoadSameScene(buildIndex));
     }
-    
+
+    private IEnumerator UnloadSameScene(int idx)
+    {
+        AsyncOperation asyncLoad = SceneManager.UnloadSceneAsync(idx);
+
+        // Wait until the asynchronous scene fully loads
+        while (!asyncLoad.isDone)
+        {
+            yield return null;
+        }
+    }
+
+    private IEnumerator LoadSameScene(int idx)
+    {
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(idx, LoadSceneMode.Additive);
+
+        // Wait until the asynchronous scene fully loads
+        while (!asyncLoad.isDone)
+        {
+            yield return null;
+        }
+    }
+
     public void Quit()
     {
         Application.Quit();

@@ -81,6 +81,7 @@ namespace Player
                 _rb.linearVelocityY = 0;
                 _rb.AddForceY(_doubleJumpForce, ForceMode2D.Impulse);
                 SoundManager.Instance.PlaySound(_jumpSound, transform,0.3f,1f);
+                
             }
         }
     

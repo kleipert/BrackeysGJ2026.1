@@ -1,9 +1,11 @@
 using System.Collections.Generic;
+using Bosses;
 using UnityEngine;
 
 public class EnemyTakeDamageFromJump : MonoBehaviour
 {
-    [SerializeField] private BoxCollider2D _headcollider;
+    private BossHealth _bossHealth;
+    [SerializeField] private Collider2D _headcollider;
     [SerializeField] private List<Collider2D> _hitColliders;
     
     // Twin jump logic
@@ -13,6 +15,7 @@ public class EnemyTakeDamageFromJump : MonoBehaviour
 
     private void Start()
     {
+        _bossHealth = GetComponentInParent<BossHealth>();
         _hitColliders = new List<Collider2D>();
     }
 
@@ -32,7 +35,7 @@ public class EnemyTakeDamageFromJump : MonoBehaviour
             var collidersHit = _headcollider.GetContacts(_hitColliders);
             if (collidersHit >= 1)
             {
-                Destroy(gameObject);
+                _bossHealth.SetCurrentHealth(_bossHealth.GetCurrentHealth() - 1);
             }
         }
     }

@@ -6,7 +6,7 @@ public class StatsSceneStart : MonoBehaviour
 {
     private void Start()
     {
-        StartCoroutine(LoadNextScene());
+        //StartCoroutine(LoadNextScene());
     }
     
     

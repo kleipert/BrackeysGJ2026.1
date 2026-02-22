@@ -101,22 +101,11 @@ public class HealthManager : MonoBehaviour
     
     public void SetMaxHealth(int amount)
     {
-        if (amount >= healthBar.Length) return;
-        
-        if (healthBar[amount] != null)
-            healthBar[amount].enabled = true;
-        
-        if(GameStats.Instance)
-            GameStats.Instance.PlayerHPMax = amount;
-        currentHealth = amount;
-        
-        for (int i = 0; i < amount; i++)
-        {
-            if (healthBar[i] == null) continue;
+        var diff = amount - maxHealth;
 
-            var anim = healthBar[i].GetComponent<Animator>();
-            if (anim != null)
-                anim.SetBool("Lost", false);
+        for (int i = 0; i < diff; i++)
+        {
+            IncreaseHealth();
         }
     }
     
