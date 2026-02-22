@@ -31,6 +31,9 @@ public class LungeBoss : MonoBehaviour
 
     [SerializeField] private GameObject _headObject;
     [SerializeField] private GameObject _levelExit;
+
+    [SerializeField] private AudioClip _bossHit;
+    
     private BossHealth _bossHP;
 
     private Rigidbody2D rb;
@@ -52,6 +55,7 @@ public class LungeBoss : MonoBehaviour
     private void OnDamageTaken(object sender, EventArgs e)
     {
         currentHits++;
+        SoundManager.Instance.PlaySound(_bossHit, transform,0.3f);
         _headObject.SetActive(false);
         StartCoroutine(EnableHeadZone());
         if (currentHits >= hitsNeeded)
