@@ -8,6 +8,8 @@ namespace Bosses
         [Header("Sound")] 
         [SerializeField] private AudioClip thunder;
         [SerializeField] private AudioClip lightning;
+
+        [SerializeField] private LayerMask _whatIsPlayer;
         
         private Animator _anim;
         private int _mode = 0;
@@ -27,7 +29,9 @@ namespace Bosses
 
         private void AnimationDone()
         {
-            // Damage player
+            var player = GameObject.FindGameObjectWithTag("Player");
+            if(Mathf.Abs(player.transform.position.x - transform.position.x) <= 1f)
+                HealthManager.Instance.TakeDamage(1);
             SoundManager.Instance.PlaySound(lightning, transform, 0.3f);
             Destroy(gameObject);
         }

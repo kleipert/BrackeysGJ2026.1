@@ -85,17 +85,31 @@ public class HealthManager : MonoBehaviour
             healthBar[maxHealth].enabled = true;
 
         maxHealth++;
+        if(GameStats.Instance)
+            GameStats.Instance.PlayerHPMax = maxHealth;
         currentHealth = maxHealth;
         
         for (int i = 0; i < maxHealth; i++)
         {
             if (healthBar[i] == null) continue;
-
+            healthBar[i].enabled = true;
             var anim = healthBar[i].GetComponent<Animator>();
             if (anim != null)
                 anim.SetBool("Lost", false);
         }
     }
+    
+    public void SetMaxHealth(int amount)
+    {
+        var diff = amount - maxHealth;
+
+        for (int i = 0; i < diff; i++)
+        {
+            IncreaseHealth();
+        }
+    }
+    
+    
 
     IEnumerator Invincible()
     {

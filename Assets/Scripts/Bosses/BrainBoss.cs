@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -15,6 +16,7 @@ namespace Bosses
         [SerializeField] private GameObject _lightningPrefab;
         [SerializeField] private Transform[] _lightningPositionsGround;
         [SerializeField] private Transform[] _lightningPositionsPlatforms;
+        
         private Transform[] _pickedPositionsGround;
         private Transform[] _pickedPositionsPlatforms;
 
@@ -43,16 +45,25 @@ namespace Bosses
 
 
         [SerializeField] private bool _playerFound = false;
+        
+        [SerializeField] private GameObject _levelExit;
+        
+        
         private Animator _anim;
         private static readonly int IsIdle = Animator.StringToHash("isIdle");
         private static readonly int IsAttacking = Animator.StringToHash("isAttacking");
         private static readonly int IsRecovering = Animator.StringToHash("isRecovering");
 
+        private BossHealth _bossHealth;
+
 
         void Start()
         {
             _anim = GetComponent<Animator>();
+            _bossHealth = GetComponent<BossHealth>();
+
             _healthCurrent = _healthTotal;
+            _bossHealth.onDamageTaken += OnBossDamage;
             
             _attacksLeft = _attacksBeforeWeakMax - _healthCurrent;
             _movementSpeed = _movementSpeedMax - _healthCurrent;
@@ -66,6 +77,25 @@ namespace Bosses
             _pickedPositionsPlatforms = new Transform[3];
             
             StartIdleAnimation();
+        }
+
+        private void OnBossDamage(object sender, EventArgs e)
+        {
+            _healthCurrent = _bossHealth.GetCurrentHealth();
+            GameObject.Find("DamageZone").SetActive(false);
+            StartCoroutine(EnableDamageZone());
+        }
+
+        private IEnumerator EnableDamageZone()
+        {
+            yield return new WaitForSeconds(3);
+            GameObject.Find("DamageZone").SetActive(true);
+        }
+
+        private void OnDestroy()
+        {
+            _bossHealth.onDamageTaken -= OnBossDamage;
+            _levelExit.SetActive(true);
         }
 
         void Update()
