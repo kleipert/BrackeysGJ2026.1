@@ -16,6 +16,7 @@ namespace Misc
             SoundManager.Instance.PlaySound(beforeBossToggle ? beforeBoss : afterBoss, transform, 0.3f);
 
             dialogueRunner.SetActive(true);
+            dialogueRunner = null;
             //dialogueRunner.gameObject.SetActive(true);
 
             //StartCoroutine(LoadNextLevel());
