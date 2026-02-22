@@ -8,6 +8,7 @@ public class HealthManager : MonoBehaviour
     [SerializeField] private GameObject player;
     [SerializeField] private AudioClip playerHit;
     [SerializeField] private AudioClip playerDeath;
+    [SerializeField] private AudioClip playerItem;
 
     private int currentHealth;
     private int maxHealth;
@@ -88,6 +89,7 @@ public class HealthManager : MonoBehaviour
         if(GameStats.Instance)
             GameStats.Instance.PlayerHPMax = maxHealth;
         currentHealth = maxHealth;
+        SoundManager.Instance.PlaySound(playerItem,player.transform,0.3f);
         
         for (int i = 0; i < maxHealth; i++)
         {

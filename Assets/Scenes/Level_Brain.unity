@@ -48373,6 +48373,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5145183161803060249, guid: 558d8b4d6cadcc24b853b69c20c24b49, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145183161803060249, guid: 558d8b4d6cadcc24b853b69c20c24b49, type: 3}
+      propertyPath: m_ActionEvents.Array.data[14].m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145183161803060249, guid: 558d8b4d6cadcc24b853b69c20c24b49, type: 3}
       propertyPath: m_ActionEvents.Array.data[16].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1986761940}
@@ -48724,6 +48732,10 @@ PrefabInstance:
       propertyPath: playerInput
       value: 
       objectReference: {fileID: 1763588766}
+    - target: {fileID: 4643590383272184228, guid: e2f9e95adecec7f4bb324433a1b239c3, type: 3}
+      propertyPath: dialogueRunner
+      value: 
+      objectReference: {fileID: 1552383582}
     - target: {fileID: 5495208232836183739, guid: e2f9e95adecec7f4bb324433a1b239c3, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0

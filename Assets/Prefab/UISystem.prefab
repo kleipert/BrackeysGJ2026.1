@@ -1478,6 +1478,7 @@ MonoBehaviour:
   player: {fileID: 0}
   playerHit: {fileID: 8300000, guid: a552d04e0a5462044a3db7c915093d86, type: 3}
   playerDeath: {fileID: 8300000, guid: 641d422ab5a167e43b606e658647d0d0, type: 3}
+  playerItem: {fileID: 8300000, guid: a2991cc370be4444a8cabc3d6fb9b104, type: 3}
 --- !u!1 &3889865489028223402
 GameObject:
   m_ObjectHideFlags: 0

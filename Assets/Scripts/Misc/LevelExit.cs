@@ -8,11 +8,16 @@ namespace Misc
     public class LevelExit : MonoBehaviour
     {
         [SerializeField] private DialogueRunner dialogueRunner;
+        [SerializeField] private AudioClip beforeBoss;
+        [SerializeField] private AudioClip afterBoss;
+        [SerializeField] private bool beforeBossToggle;
         
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (!other.CompareTag("Player")) return;
-            
+
+            SoundManager.Instance.PlaySound(beforeBossToggle ? beforeBoss : afterBoss, transform, 0.3f);
+
             dialogueRunner.gameObject.SetActive(true);
 
             //StartCoroutine(LoadNextLevel());

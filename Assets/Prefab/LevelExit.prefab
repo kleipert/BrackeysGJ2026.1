@@ -91,3 +91,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92f4561193b9e04429ca9ea3f6f21b83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelExit
+  dialogueRunner: {fileID: 0}
+  beforeBoss: {fileID: 8300000, guid: 39dde01a294d2274ab881eb06579096f, type: 3}
+  afterBoss: {fileID: 8300000, guid: 4e717f4224e209646bf063ea8601e0b4, type: 3}
+  beforeBossToggle: 1
