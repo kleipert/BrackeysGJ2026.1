@@ -1,4 +1,6 @@
+using System;
 using System.Collections;
+using Bosses;
 using UnityEngine;
 
 public class EyeBoss : MonoBehaviour
@@ -18,6 +20,10 @@ public class EyeBoss : MonoBehaviour
     [SerializeField] private AudioSource _laserBeam;
     [SerializeField] private AudioClip _laserLoad;
 
+    [SerializeField] private GameObject _levelExitZone;
+    [SerializeField] private GameObject _headZone;
+    private BossHealth _bossHealth;
+
     private bool _inAttack;
     private bool _lockRotationToVulnerableAngle;  
     private Animator _animator;
@@ -25,6 +31,15 @@ public class EyeBoss : MonoBehaviour
     void Start()
     {
         _animator = GetComponent<Animator>();
+        _bossHealth = _headZone.GetComponent<BossHealth>();
+        _bossHealth.onDamageTaken += OnDamageTaken;
+    }
+
+    private void OnDamageTaken(object sender, EventArgs e)
+    {
+        _headZone.SetActive(false);
+        if(_bossHealth.GetCurrentHealth() == 0)
+            Destroy(gameObject);
     }
 
     void Update()
@@ -68,6 +83,7 @@ public class EyeBoss : MonoBehaviour
 
         _animator.SetBool(IsAttacking, false);
         _animator.SetBool(IsVulnerable, true);
+        _headZone.SetActive(true);
         laser.SetActive(false);
         _laserBeam.Stop();
         
@@ -76,6 +92,13 @@ public class EyeBoss : MonoBehaviour
         _lockRotationToVulnerableAngle = false;
 
         _animator.SetBool(IsVulnerable, false);
+        _headZone.SetActive(false);
         _inAttack = false;
+    }
+
+    private void OnDestroy()
+    {
+        _bossHealth.onDamageTaken -= OnDamageTaken;
+        _levelExitZone.SetActive(true);
     }
 }

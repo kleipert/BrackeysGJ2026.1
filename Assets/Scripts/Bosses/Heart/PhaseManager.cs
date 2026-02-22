@@ -23,6 +23,8 @@ public class PhaseManager : MonoBehaviour
     [SerializeField] private float shieldActivateDelay = 0.15f;
 
     [SerializeField] private int healthHeart = 3;
+    [SerializeField] private GameObject _exitZone;
+    [SerializeField] private GameObject _heart;
 
     public static PhaseManager Instance { get; private set; }
 
@@ -93,6 +95,12 @@ public class PhaseManager : MonoBehaviour
         else
         {
             SetShieldActive(false);
+        }
+
+        if (_currentPhaseIndex == 2)
+        {
+            Destroy(_heart);
+            _exitZone.SetActive(true);
         }
     }
 

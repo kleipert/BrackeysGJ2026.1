@@ -101,9 +101,48 @@ public class PauseManager : MonoBehaviour
     public void Restart()
     {
         Resume();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        ReloadCurrentScene();
     }
-    
+
+    private void ReloadCurrentScene()
+    {
+        var uiSystem = GameObject.Find("UISystem");
+        Destroy(uiSystem);
+        var player = GameObject.Find("Player");
+        Destroy(player);
+            
+        Scene currentScene = SceneManager.GetActiveScene();
+        int buildIndex = currentScene.buildIndex;
+
+        var statsScene = SceneManager.GetSceneByName("StatsScene");
+        SceneManager.SetActiveScene(statsScene);
+
+        StartCoroutine(UnloadSameScene(buildIndex));
+        StartCoroutine(LoadSameScene(buildIndex));
+    }
+
+    private IEnumerator UnloadSameScene(int idx)
+    {
+        AsyncOperation asyncLoad = SceneManager.UnloadSceneAsync(idx);
+
+        // Wait until the asynchronous scene fully loads
+        while (!asyncLoad.isDone)
+        {
+            yield return null;
+        }
+    }
+
+    private IEnumerator LoadSameScene(int idx)
+    {
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(idx, LoadSceneMode.Additive);
+
+        // Wait until the asynchronous scene fully loads
+        while (!asyncLoad.isDone)
+        {
+            yield return null;
+        }
+    }
+
     public void Quit()
     {
         Application.Quit();
@@ -203,6 +242,5 @@ public class PauseManager : MonoBehaviour
 
         timerImage.fillAmount = 0f;
     }
-    
 }
 

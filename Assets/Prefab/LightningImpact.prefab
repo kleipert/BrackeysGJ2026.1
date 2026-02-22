@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3023636863794874382}
   - component: {fileID: 3501678881184327939}
   - component: {fileID: 6915312190404258117}
+  - component: {fileID: 2253621143786566441}
   m_Layer: 0
   m_Name: LightningImpact
   m_TagString: Untagged
@@ -129,3 +130,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LightningImpact
   thunder: {fileID: 8300000, guid: f9ac79f639581b844a02b325c2d98ee8, type: 3}
   lightning: {fileID: 8300000, guid: 8a5dc4468418f2e4a8ef40d726824233, type: 3}
+  _whatIsPlayer:
+    serializedVersion: 2
+    m_Bits: 512
+--- !u!61 &2253621143786566441
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7885643287355702819}
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.010004997, y: 1.6164625}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 1.84375, y: 4}
+    newSize: {x: 1.84375, y: 4}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.1433773, y: 2.4858603}
+  m_EdgeRadius: 0
