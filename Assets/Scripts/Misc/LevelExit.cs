@@ -1,13 +1,10 @@
-using System.Collections;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using Yarn.Unity;
 
 namespace Misc
 {
     public class LevelExit : MonoBehaviour
     {
-        [SerializeField] private DialogueRunner dialogueRunner;
+        [SerializeField] private GameObject dialogueRunner;
         [SerializeField] private AudioClip beforeBoss;
         [SerializeField] private AudioClip afterBoss;
         [SerializeField] private bool beforeBossToggle;
@@ -18,7 +15,8 @@ namespace Misc
 
             SoundManager.Instance.PlaySound(beforeBossToggle ? beforeBoss : afterBoss, transform, 0.3f);
 
-            dialogueRunner.gameObject.SetActive(true);
+            dialogueRunner.SetActive(true);
+            //dialogueRunner.gameObject.SetActive(true);
 
             //StartCoroutine(LoadNextLevel());
         }
