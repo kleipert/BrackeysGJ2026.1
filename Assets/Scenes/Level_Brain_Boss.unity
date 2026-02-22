@@ -472,6 +472,7 @@ MonoBehaviour:
   _isInRecoveryZone: 0
   _playerFound: 1
   _levelExit: {fileID: 844775792}
+  _headObject: {fileID: 1091797853}
 --- !u!212 &58090628
 SpriteRenderer:
   serializedVersion: 2

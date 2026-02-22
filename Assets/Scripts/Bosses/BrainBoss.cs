@@ -47,6 +47,7 @@ namespace Bosses
         [SerializeField] private bool _playerFound = false;
         
         [SerializeField] private GameObject _levelExit;
+        [SerializeField] private GameObject _headObject;
         
         
         private Animator _anim;
@@ -82,14 +83,14 @@ namespace Bosses
         private void OnBossDamage(object sender, EventArgs e)
         {
             _healthCurrent = _bossHealth.GetCurrentHealth();
-            GameObject.Find("DamageZone").SetActive(false);
+            _headObject.SetActive(false);
             StartCoroutine(EnableDamageZone());
         }
 
         private IEnumerator EnableDamageZone()
         {
             yield return new WaitForSeconds(3);
-            GameObject.Find("DamageZone").SetActive(true);
+            _headObject.SetActive(true);
         }
 
         private void OnDestroy()
