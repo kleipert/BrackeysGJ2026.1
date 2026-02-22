@@ -41,8 +41,11 @@ public class SceneInit : MonoBehaviour
         if (_initDone) return;
 
         _playerHPMax = GameStats.Instance ? GameStats.Instance.PlayerHPMax : 3;
-        HealthManager.Instance.SetMaxHealth(_playerHPMax);
-        HealthManager.Instance.Heal(10);
+        if (HealthManager.Instance)
+        {
+            HealthManager.Instance.SetMaxHealth(_playerHPMax);
+            HealthManager.Instance.Heal(10);
+        }
         SetupLevel();
         _initDone = true;
         
