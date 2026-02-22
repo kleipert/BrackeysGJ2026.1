@@ -3619,17 +3619,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &117042381 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1686045622772568129, guid: 17d9d076f0eb13e4aac276e297275067, type: 3}
-  m_PrefabInstance: {fileID: 895702541}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bec29c0a230741bdac901dba8da47ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &149650921
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59161,6 +59150,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17d9d076f0eb13e4aac276e297275067, type: 3}
+--- !u!1 &895702542 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 71133148670875708, guid: 17d9d076f0eb13e4aac276e297275067, type: 3}
+  m_PrefabInstance: {fileID: 895702541}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1434167712
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59687,7 +59681,7 @@ PrefabInstance:
     - target: {fileID: 5940618314636656650, guid: 76d3f59a7bcc01b4d851b3f465423f5d, type: 3}
       propertyPath: dialogueRunner
       value: 
-      objectReference: {fileID: 117042381}
+      objectReference: {fileID: 895702542}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
