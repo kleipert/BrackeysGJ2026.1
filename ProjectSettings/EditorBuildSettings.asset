@@ -15,11 +15,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Level_Brain_Boss.unity
     guid: 451bae2c7ac8b2b49893219d0bf01839
   - enabled: 1
-    path: Assets/Scenes/DummyScene_Lung.unity
-    guid: 77fb5719e021cde4ab7975060f97de7c
+    path: Assets/Scenes/Level_Lunge.unity
+    guid: 77a35d8e352c67b4f88b9505ce71ceba
   - enabled: 1
-    path: Assets/Scenes/DummyScene_Lung_Boss.unity
-    guid: 1f03f0f0d6e459141aea77a3525f5691
+    path: Assets/Scenes/Lunge_Bossarena.unity
+    guid: 943b09f974e9517478af72f63c05a15c
   - enabled: 1
     path: Assets/Scenes/Level_Eye.unity
     guid: 4ea149b547fddb140bd1e6a3124b2dce
