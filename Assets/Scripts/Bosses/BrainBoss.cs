@@ -85,7 +85,7 @@ namespace Bosses
         {
             _healthCurrent = _bossHealth.GetCurrentHealth();
             _headObject.SetActive(false);
-            SoundManager.Instance.PlaySound(_hitSound, transform,0.3f);
+            SoundManager.Instance.PlaySound(_hitSound, transform,1f);
             StartCoroutine(EnableDamageZone());
         }
 

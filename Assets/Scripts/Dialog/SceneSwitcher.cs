@@ -32,6 +32,7 @@ public class SceneSwitcher : MonoBehaviour
         Destroy(uiSystem);
         var player = GameObject.Find("Player");
         Destroy(player);
+        Destroy(dialogueRunner);
 
         uiSystem = null;
         player = null;
