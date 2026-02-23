@@ -44,8 +44,6 @@ namespace Misc
             Destroy(uiSystem);
             var player = GameObject.Find("Player");
             Destroy(player);
-            var levelExit = GameObject.Find("LevelExit");
-            Destroy(levelExit);
             
             AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(newIdx, LoadSceneMode.Additive);
 
