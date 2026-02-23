@@ -14,7 +14,7 @@ public class EyeBoss : MonoBehaviour
     [SerializeField] private bool _isActive;
 
     [Header("Rotation")]
-    [SerializeField] private float vulnerableRotationZ = 90f; 
+    [SerializeField] private float vulnerableRotationZ = 90f;
 
     [Header("Sound")]
     [SerializeField] private AudioSource _laserBeam;
@@ -26,8 +26,10 @@ public class EyeBoss : MonoBehaviour
     private BossHealth _bossHealth;
 
     private bool _inAttack;
-    private bool _lockRotationToVulnerableAngle;  
+    private bool _lockRotationToVulnerableAngle;
     private Animator _animator;
+    
+    private Coroutine _attackRoutine;
 
     void Start()
     {
@@ -39,19 +41,45 @@ public class EyeBoss : MonoBehaviour
     private void OnDamageTaken(object sender, EventArgs e)
     {
         _headZone.SetActive(false);
-        SoundManager.Instance.PlaySound(_bossHit, transform, 0.3f);
-        if(_bossHealth.GetCurrentHealth() == 0)
+        SoundManager.Instance.PlaySound(_bossHit, transform, 1f);
+
+        if (_bossHealth.GetCurrentHealth() == 0)
+        {
             Destroy(gameObject);
+            return;
+        }
+        
+        RestartAttackImmediately();
+    }
+
+    private void RestartAttackImmediately()
+    {
+        if (_attackRoutine != null)
+        {
+            StopCoroutine(_attackRoutine);
+            _attackRoutine = null;
+        }
+        
+        laser.SetActive(false);
+        if (_laserBeam.isPlaying) _laserBeam.Stop();
+
+        _lockRotationToVulnerableAngle = false;
+        _animator.SetBool(IsVulnerable, false);
+        _animator.SetBool(IsAttacking, false);
+        _headZone.SetActive(false);
+        
+        _inAttack = true;
+        _attackRoutine = StartCoroutine(StartAttack());
     }
 
     void Update()
     {
         if (!player || !_isActive) return;
-        
+
         float targetAngle;
         if (_lockRotationToVulnerableAngle)
         {
-            targetAngle = vulnerableRotationZ; 
+            targetAngle = vulnerableRotationZ;
         }
         else
         {
@@ -61,11 +89,11 @@ public class EyeBoss : MonoBehaviour
 
         Quaternion q = Quaternion.AngleAxis(targetAngle, Vector3.forward);
         transform.rotation = Quaternion.Slerp(transform.rotation, q, turnSpeed * Time.deltaTime);
-        
+
         if (_inAttack) return;
 
         _inAttack = true;
-        StartCoroutine(StartAttack());
+        _attackRoutine = StartCoroutine(StartAttack());
     }
 
     public void ActivateBoss()
@@ -88,20 +116,26 @@ public class EyeBoss : MonoBehaviour
         _headZone.SetActive(true);
         laser.SetActive(false);
         _laserBeam.Stop();
-        
+
         _lockRotationToVulnerableAngle = true;
         yield return new WaitForSecondsRealtime(15f);
-        _lockRotationToVulnerableAngle = false;
 
+        _lockRotationToVulnerableAngle = false;
         _animator.SetBool(IsVulnerable, false);
         _headZone.SetActive(false);
+
         _inAttack = false;
+        _attackRoutine = null;
     }
 
     private void OnDestroy()
     {
-        _bossHealth.onDamageTaken -= OnDamageTaken;
-        _levelExitZone.SetActive(true);
+        if (_bossHealth != null)
+            _bossHealth.onDamageTaken -= OnDamageTaken;
+
+        if (_levelExitZone != null)
+            _levelExitZone.SetActive(true);
+
         _levelExitZone = null;
         _bossHealth = null;
     }

@@ -1,4 +1,7 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 namespace Misc
 {
@@ -8,21 +11,31 @@ namespace Misc
         [SerializeField] private AudioClip beforeBoss;
         [SerializeField] private AudioClip afterBoss;
         [SerializeField] private bool beforeBossToggle;
+        [SerializeField] private PlayerInput playerInput;
+
+        private bool switchStartet;
         
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if (!other.CompareTag("Player")) return;
+            if (!other.CompareTag("Player")&&!switchStartet) return;
+            
+            switchStartet = true;
+            playerInput.DeactivateInput();
 
-            SoundManager.Instance.PlaySound(beforeBossToggle ? beforeBoss : afterBoss, transform, 0.3f);
+            if (dialogueRunner)
+            {
+                SoundManager.Instance.PlaySound(beforeBossToggle ? beforeBoss : afterBoss, transform, 1f);
 
-            dialogueRunner.SetActive(true);
-            dialogueRunner = null;
-            //dialogueRunner.gameObject.SetActive(true);
-
-            //StartCoroutine(LoadNextLevel());
+                dialogueRunner.SetActive(true);
+                dialogueRunner = null;
+            }
+            else
+            {
+                StartCoroutine(LoadNextLevel());
+            }
         }
 
-        /*private IEnumerator LoadNextLevel()
+        private IEnumerator LoadNextLevel()
         {
             var oldIdx = SceneManager.GetActiveScene().buildIndex;
             var newIdx = oldIdx + 1;
@@ -42,6 +55,6 @@ namespace Misc
             SceneManager.UnloadSceneAsync(oldIdx);
             var newScene = SceneManager.GetSceneByBuildIndex(newIdx);
             SceneManager.SetActiveScene(newScene);
-        }*/
+        }
     }
 }

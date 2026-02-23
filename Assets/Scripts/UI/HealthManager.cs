@@ -40,7 +40,7 @@ public class HealthManager : MonoBehaviour
     {
         if (isInvincible)  return;
         
-        SoundManager.Instance.PlaySound(playerHit,player.transform,0.3f);
+        SoundManager.Instance.PlaySound(playerHit,player.transform,1f);
         
         currentHealth = Mathf.Clamp(currentHealth - amount, 0, maxHealth);
         
@@ -56,7 +56,7 @@ public class HealthManager : MonoBehaviour
         if (currentHealth <= 0)
         {
             PauseManager.Instance.IsDead();
-            SoundManager.Instance.PlaySound(playerDeath,player.transform,0.3f,5f);
+            SoundManager.Instance.PlaySound(playerDeath,player.transform,1f,5f);
         }
         
         StartCoroutine(Invincible());
@@ -89,7 +89,7 @@ public class HealthManager : MonoBehaviour
         if(GameStats.Instance)
             GameStats.Instance.PlayerHPMax = maxHealth;
         currentHealth = maxHealth;
-        SoundManager.Instance.PlaySound(playerItem,player.transform,0.3f);
+        SoundManager.Instance.PlaySound(playerItem,player.transform,0.6f);
         
         for (int i = 0; i < maxHealth; i++)
         {

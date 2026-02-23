@@ -3,69 +3,67 @@ using UnityEngine;
 
 public class PhaseManager : MonoBehaviour
 {
-    private static readonly int IsVurneable = Animator.StringToHash("IsVurneable");
+    private static readonly int IsVulnerable = Animator.StringToHash("IsVurneable");
 
-    [SerializeField] private GameObject phase1;
-    [SerializeField] private GameObject phase2;
-    [SerializeField] private GameObject phase3;
+    [Header("Phases (size 3 in Inspector)")]
+    [SerializeField] private GameObject[] phases = new GameObject[3];
 
+    [Header("Shield")]
     [SerializeField] private GameObject shield;
+    [SerializeField] private float shieldActivateDelay = 0.15f;
 
-    [SerializeField] private Transform heartCenter;
-    [SerializeField] private LayerMask playerMask;
+    [Header("Heart / End")]
+    [SerializeField] private int heartHealth = 3;
+    [SerializeField] private GameObject exitZone;
+    [SerializeField] private GameObject heartObject;
 
+    [Header("Vulnerability / Animation")]
     [SerializeField] private Animator animator;
 
+    [Header("Player Eject")]
+    [SerializeField] private Transform heartCenter;
+    [SerializeField] private LayerMask playerMask;
     [SerializeField] private float ejectRadius = 3f;
     [SerializeField] private float ejectOutForce = 8f;
     [SerializeField] private float ejectUpForce = 6f;
 
-    [SerializeField] private float shieldActivateDelay = 0.15f;
-
-    [SerializeField] private int healthHeart = 3;
-    [SerializeField] private GameObject _exitZone;
-    [SerializeField] private GameObject _heart;
-
     public static PhaseManager Instance { get; private set; }
 
-    private int _currentPhaseIndex = 0;
-    private bool _waitingForHeartDamage = false;
+    private int _phaseIndex;
+    private bool _waitingForHeartDamage;
 
     private Collider2D _shieldCollider;
     private Coroutine _shieldRoutine;
 
     private void Awake()
     {
-        if (Instance != null && Instance != this)
-        {
-            Destroy(gameObject);
-            return;
-        }
+        if (Instance != null && Instance != this) { Destroy(gameObject); return; }
         Instance = this;
 
-        if (shield)
-            _shieldCollider = shield.GetComponent<Collider2D>();
+        if (shield) _shieldCollider = shield.GetComponent<Collider2D>();
     }
 
     private void Start()
     {
-        phase1.SetActive(true);
-        phase2.SetActive(false);
-        phase3.SetActive(false);
+        for (int i = 0; i < phases.Length; i++)
+            if (phases[i]) phases[i].SetActive(i == 0);
 
-        _currentPhaseIndex = 0;
+        _phaseIndex = 0;
         _waitingForHeartDamage = false;
 
         SetShieldActive(true);
-        if (animator) animator.SetBool(IsVurneable, false);
+        SetVulnerable(false);
+
+        if (exitZone) exitZone.SetActive(false);
     }
 
     private void Update()
     {
-        if (!_waitingForHeartDamage && AreAllDirectChildrenInactive(GetCurrentPhase()))
+        var current = GetCurrentPhase();
+        if (!_waitingForHeartDamage && AreAllDirectChildrenInactive(current))
         {
             SetShieldActive(false);
-            if (animator) animator.SetBool(IsVurneable, true);
+            SetVulnerable(true);
             _waitingForHeartDamage = true;
         }
     }
@@ -75,33 +73,67 @@ public class PhaseManager : MonoBehaviour
         if (!_waitingForHeartDamage)
             return;
 
-        healthHeart = Mathf.Max(0, healthHeart - 1);
+        _waitingForHeartDamage = false;
+        SetVulnerable(false);
+
+        heartHealth = Mathf.Max(0, heartHealth - 1);
         
-        if (_currentPhaseIndex < 2)
+        EjectPlayersFromHeart2D();
+        
+        if (heartHealth <= 0)
         {
-            GameObject from = GetCurrentPhase();
-            _currentPhaseIndex++;
-            GameObject to = GetCurrentPhase();
+            EndFight();
+            return;
+        }
+        
+        int nextIndex = Mathf.Min(_phaseIndex + 1, phases.Length - 1);
+        if (nextIndex != _phaseIndex)
+            SwitchPhase(_phaseIndex, nextIndex);
 
-            SwitchPhase(from, to);
-            
-            if (animator) animator.SetBool(IsVurneable, false);
-            _waitingForHeartDamage = false;
-            
-            EjectPlayersFromHeart2D();
-            
-            EnableShieldAfterDelay();
-        }
-        else
-        {
-            SetShieldActive(false);
-        }
+        EnableShieldAfterDelay();
+    }
 
-        if (_currentPhaseIndex == 2)
+    private void EndFight()
+    {
+        SetShieldActive(false);
+        SetVulnerable(false);
+
+        if (heartObject) Destroy(heartObject);
+        if (exitZone) exitZone.SetActive(true);
+    }
+
+    private void SetVulnerable(bool v)
+    {
+        if (animator) animator.SetBool(IsVulnerable, v);
+    }
+
+    private void SwitchPhase(int fromIndex, int toIndex)
+    {
+        if (fromIndex >= 0 && fromIndex < phases.Length && phases[fromIndex])
+            phases[fromIndex].SetActive(false);
+
+        if (toIndex >= 0 && toIndex < phases.Length && phases[toIndex])
+            phases[toIndex].SetActive(true);
+
+        _phaseIndex = toIndex;
+    }
+
+    private GameObject GetCurrentPhase()
+    {
+        if (_phaseIndex < 0 || _phaseIndex >= phases.Length) return null;
+        return phases[_phaseIndex];
+    }
+
+    private bool AreAllDirectChildrenInactive(GameObject parent)
+    {
+        if (!parent) return true;
+
+        foreach (Transform child in parent.transform)
         {
-            Destroy(_heart);
-            _exitZone.SetActive(true);
+            if (child.gameObject.activeSelf)
+                return false;
         }
+        return true;
     }
 
     private void EnableShieldAfterDelay()
@@ -117,9 +149,8 @@ public class PhaseManager : MonoBehaviour
     private IEnumerator EnableShieldRoutine()
     {
         SetShieldActive(false);
-        
-        yield return new WaitForFixedUpdate();
 
+        yield return new WaitForFixedUpdate();
         yield return new WaitForSeconds(shieldActivateDelay);
 
         SetShieldActive(true);
@@ -130,40 +161,12 @@ public class PhaseManager : MonoBehaviour
         if (!shield) return;
 
         shield.SetActive(active);
-        
+
         if (!_shieldCollider)
             _shieldCollider = shield.GetComponent<Collider2D>();
-
+        
         if (_shieldCollider)
             _shieldCollider.enabled = active;
-    }
-
-    private void SwitchPhase(GameObject from, GameObject to)
-    {
-        if (from) from.SetActive(false);
-        if (to) to.SetActive(true);
-    }
-
-    private GameObject GetCurrentPhase()
-    {
-        return _currentPhaseIndex switch
-        {
-            0 => phase1,
-            1 => phase2,
-            _ => phase3,
-        };
-    }
-
-    private bool AreAllDirectChildrenInactive(GameObject parent)
-    {
-        if (!parent) return true;
-
-        foreach (Transform child in parent.transform)
-        {
-            if (child.gameObject.activeInHierarchy)
-                return false;
-        }
-        return true;
     }
 
     private void EjectPlayersFromHeart2D()
@@ -175,19 +178,27 @@ public class PhaseManager : MonoBehaviour
 
         foreach (var h in hits)
         {
-            if (!h || h.isTrigger) continue;
+            if (!h) continue;
 
             Rigidbody2D rb = h.attachedRigidbody;
             if (!rb) continue;
 
             Vector2 dir = (rb.position - heartPos);
             if (dir.sqrMagnitude < 0.0001f) dir = Vector2.right;
-            dir = dir.normalized;
+            dir.Normalize();
 
             Vector2 impulse = dir * ejectOutForce + Vector2.up * ejectUpForce;
 
-            rb.linearVelocity = Vector2.zero; 
+            rb.linearVelocity = Vector2.zero;
             rb.AddForce(impulse, ForceMode2D.Impulse);
         }
     }
+
+#if UNITY_EDITOR
+    private void OnDrawGizmosSelected()
+    {
+        if (!heartCenter) return;
+        Gizmos.DrawWireSphere(heartCenter.position, ejectRadius);
+    }
+#endif
 }

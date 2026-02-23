@@ -72,7 +72,7 @@ namespace Player
             if (IsGrounded && _jumpPressed)
             {
                 _rb.AddForceY(_jumpForce, ForceMode2D.Impulse);
-                SoundManager.Instance.PlaySound(_jumpSound, transform,0.3f, 1);
+                SoundManager.Instance.PlaySound(_jumpSound, transform,1f, 1);
                 return;
             }
             if(_jumpPressed && !_doubleJumpUsed && _canDoubleJump)
@@ -80,7 +80,7 @@ namespace Player
                 _doubleJumpUsed = true;
                 _rb.linearVelocityY = 0;
                 _rb.AddForceY(_doubleJumpForce, ForceMode2D.Impulse);
-                SoundManager.Instance.PlaySound(_jumpSound, transform,0.3f,1f);
+                SoundManager.Instance.PlaySound(_jumpSound, transform,1f,1f);
                 
             }
         }

@@ -18,7 +18,7 @@ namespace Bosses
         private void Start()
         {
             _anim = GetComponent<Animator>();
-            SoundManager.Instance.PlaySound(thunder, transform, 0.3f);
+            SoundManager.Instance.PlaySound(thunder, transform, 1f);
             _anim.SetInteger(LightningMode, _mode);
         }
 
@@ -32,7 +32,7 @@ namespace Bosses
             var player = GameObject.FindGameObjectWithTag("Player");
             if(Mathf.Abs(player.transform.position.x - transform.position.x) <= 1f)
                 HealthManager.Instance.TakeDamage(1);
-            SoundManager.Instance.PlaySound(lightning, transform, 0.3f);
+            SoundManager.Instance.PlaySound(lightning, transform, 1f);
             Destroy(gameObject);
         }
     }

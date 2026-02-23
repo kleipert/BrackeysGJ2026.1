@@ -69628,6 +69628,10 @@ PrefabInstance:
       value: LevelExit
       objectReference: {fileID: 0}
     - target: {fileID: 5940618314636656650, guid: 76d3f59a7bcc01b4d851b3f465423f5d, type: 3}
+      propertyPath: playerInput
+      value: 
+      objectReference: {fileID: 517789428}
+    - target: {fileID: 5940618314636656650, guid: 76d3f59a7bcc01b4d851b3f465423f5d, type: 3}
       propertyPath: dialogueRunner
       value: 
       objectReference: {fileID: 1639108422}
@@ -69718,6 +69722,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5564585901694493712, guid: 17d9d076f0eb13e4aac276e297275067, type: 3}
       propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5889476955664643194, guid: 17d9d076f0eb13e4aac276e297275067, type: 3}
+      propertyPath: hurryUpLineKeyCode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5889476955664643194, guid: 17d9d076f0eb13e4aac276e297275067, type: 3}
+      propertyPath: hurryUpOptionsKeyCode
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -69934,6 +69946,14 @@ PrefabInstance:
       propertyPath: startNode
       value: BeforeHeart
       objectReference: {fileID: 0}
+    - target: {fileID: 5889476955664643194, guid: 17d9d076f0eb13e4aac276e297275067, type: 3}
+      propertyPath: hurryUpLineKeyCode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5889476955664643194, guid: 17d9d076f0eb13e4aac276e297275067, type: 3}
+      propertyPath: hurryUpOptionsKeyCode
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -69962,7 +69982,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 7543e79d787c60c419a4f07b1a154464, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
