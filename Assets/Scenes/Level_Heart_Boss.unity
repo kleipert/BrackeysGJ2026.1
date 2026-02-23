@@ -51392,14 +51392,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PhaseManager
   phases:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1629033551}
+  - {fileID: 857346123}
+  - {fileID: 2116745495}
   shield: {fileID: 1445350355}
   shieldActivateDelay: 0.15
   heartHealth: 3
-  exitZone: {fileID: 0}
-  heartObject: {fileID: 0}
+  exitZone: {fileID: 1219765871}
+  heartObject: {fileID: 1232702262}
   animator: {fileID: 1232702266}
   heartCenter: {fileID: 1232702264}
   playerMask:
@@ -52530,7 +52530,7 @@ Tilemap:
       - {fileID: 452760945, guid: 95a9556d3220e984d8558fe6c42d6100, type: 3}
       - {fileID: 1802764145, guid: 95a9556d3220e984d8558fe6c42d6100, type: 3}
       - {fileID: -1450555674, guid: 95a9556d3220e984d8558fe6c42d6100, type: 3}
-      m_AnimationSpeed: 5.0000005
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 5, y: -13, z: 0}
@@ -52635,7 +52635,7 @@ Tilemap:
       - {fileID: -969258895, guid: 95a9556d3220e984d8558fe6c42d6100, type: 3}
       - {fileID: -969258895, guid: 95a9556d3220e984d8558fe6c42d6100, type: 3}
       - {fileID: 1002646543, guid: 95a9556d3220e984d8558fe6c42d6100, type: 3}
-      m_AnimationSpeed: 5
+      m_AnimationSpeed: 5.0000005
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 12, y: -13, z: 0}
@@ -53241,6 +53241,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 3424139757838156430, guid: 404141c31563fa14f990a86f91290350, type: 3}
   m_PrefabInstance: {fileID: 289956644}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1219765871 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4658206041572280275, guid: 76d3f59a7bcc01b4d851b3f465423f5d, type: 3}
+  m_PrefabInstance: {fileID: 1845998223}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1232702262
 GameObject:
