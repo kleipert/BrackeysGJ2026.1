@@ -4418,6 +4418,14 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5889476955664643194, guid: 17d9d076f0eb13e4aac276e297275067, type: 3}
+      propertyPath: hurryUpLineKeyCode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5889476955664643194, guid: 17d9d076f0eb13e4aac276e297275067, type: 3}
+      propertyPath: hurryUpOptionsKeyCode
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -59144,6 +59152,14 @@ PrefabInstance:
     - target: {fileID: 1686045622772568129, guid: 17d9d076f0eb13e4aac276e297275067, type: 3}
       propertyPath: startNode
       value: BeforEye
+      objectReference: {fileID: 0}
+    - target: {fileID: 5889476955664643194, guid: 17d9d076f0eb13e4aac276e297275067, type: 3}
+      propertyPath: hurryUpLineKeyCode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5889476955664643194, guid: 17d9d076f0eb13e4aac276e297275067, type: 3}
+      propertyPath: hurryUpOptionsKeyCode
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

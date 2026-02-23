@@ -24057,7 +24057,7 @@ Tilemap:
       - {fileID: 1773518241, guid: 95a9556d3220e984d8558fe6c42d6100, type: 3}
       - {fileID: 188973200, guid: 95a9556d3220e984d8558fe6c42d6100, type: 3}
       - {fileID: 443124547, guid: 95a9556d3220e984d8558fe6c42d6100, type: 3}
-      m_AnimationSpeed: 5.0000005
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 61, y: -3, z: 0}
@@ -71645,6 +71645,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5564585901694493712, guid: 17d9d076f0eb13e4aac276e297275067, type: 3}
       propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5889476955664643194, guid: 17d9d076f0eb13e4aac276e297275067, type: 3}
+      propertyPath: hurryUpLineKeyCode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5889476955664643194, guid: 17d9d076f0eb13e4aac276e297275067, type: 3}
+      propertyPath: hurryUpOptionsKeyCode
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
