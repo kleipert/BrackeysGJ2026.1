@@ -280,6 +280,7 @@ namespace Bosses
             {
                 _isMovingToRecover = false;
                 _isRecovering = true;
+                _headObject.SetActive(true);
                 StartRecoverAnimation();
             }
         }
@@ -308,6 +309,7 @@ namespace Bosses
 
         private void MoveFromRecover()
         {
+            _headObject.SetActive(false);
             var correctPosY = _isInIdleMiddle;
             
             if(!correctPosY)
