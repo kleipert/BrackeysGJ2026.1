@@ -30,7 +30,9 @@ namespace Bosses
         private void AnimationDone()
         {
             var player = GameObject.FindGameObjectWithTag("Player");
-            if(Mathf.Abs(player.transform.position.x - transform.position.x) <= 1f)
+            var xPos = Mathf.Abs(player.transform.position.x - transform.position.x);
+            var yPos = Mathf.Abs(player.transform.position.y - (transform.position.y + .5f));
+            if(xPos <= 1f && yPos <= .5f)
                 HealthManager.Instance.TakeDamage(1);
             SoundManager.Instance.PlaySound(lightning, transform, 1f);
             Destroy(gameObject);
