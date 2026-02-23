@@ -59679,6 +59679,10 @@ PrefabInstance:
       value: LevelExit
       objectReference: {fileID: 0}
     - target: {fileID: 5940618314636656650, guid: 76d3f59a7bcc01b4d851b3f465423f5d, type: 3}
+      propertyPath: playerInput
+      value: 
+      objectReference: {fileID: 517789428}
+    - target: {fileID: 5940618314636656650, guid: 76d3f59a7bcc01b4d851b3f465423f5d, type: 3}
       propertyPath: dialogueRunner
       value: 
       objectReference: {fileID: 895702542}

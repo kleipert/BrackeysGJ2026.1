@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class EnemyTakeDamageFromJump : MonoBehaviour
 {
-    private BossHealth _bossHealth;
     [SerializeField] private Collider2D _headcollider;
     [SerializeField] private List<Collider2D> _hitColliders;
+    [SerializeField] private BossHealth _bossHealth;
     
     // Twin jump logic
     [SerializeField] private bool _gotHit;
@@ -15,7 +15,6 @@ public class EnemyTakeDamageFromJump : MonoBehaviour
 
     private void Start()
     {
-        _bossHealth = GetComponentInParent<BossHealth>();
         _hitColliders = new List<Collider2D>();
     }
 

@@ -32,6 +32,8 @@ public class SceneSwitcher : MonoBehaviour
         Destroy(uiSystem);
         var player = GameObject.Find("Player");
         Destroy(player);
+        var levelExit = GameObject.Find("LevelExit");
+        Destroy(levelExit);
         Destroy(dialogueRunner);
 
         uiSystem = null;

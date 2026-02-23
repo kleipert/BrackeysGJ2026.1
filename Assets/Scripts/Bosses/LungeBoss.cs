@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 using Bosses;
 
 public class LungeBoss : MonoBehaviour
@@ -33,6 +34,8 @@ public class LungeBoss : MonoBehaviour
     [SerializeField] private GameObject _levelExit;
 
     [SerializeField] private AudioClip _bossHit;
+    [SerializeField] private BoxCollider2D _damageCollider;
+    [SerializeField] private List<Collider2D> _hitColliders;
     
     private BossHealth _bossHP;
 
@@ -55,18 +58,18 @@ public class LungeBoss : MonoBehaviour
     private void OnDamageTaken(object sender, EventArgs e)
     {
         currentHits++;
-        SoundManager.Instance.PlaySound(_bossHit, transform,0.3f);
+        SoundManager.Instance.PlaySound(_bossHit, transform,1);
         _headObject.SetActive(false);
         StartCoroutine(EnableHeadZone());
         if (currentHits >= hitsNeeded)
         {
-            StartCoroutine(FlyRoutine());
+            StartCoroutine(Wait());
         }
     }
 
     private IEnumerator EnableHeadZone()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(1);
         _headObject.SetActive(true);
     }
 
@@ -86,13 +89,13 @@ public class LungeBoss : MonoBehaviour
     {
         if (movingRight)
         {
-            transform.position += Vector3.right * moveSpeed * Time.deltaTime;
+            transform.position += Vector3.right * (moveSpeed * Time.deltaTime);
             if (transform.position.x >= rightX)
                 movingRight = false;
         }
         else
         {
-            transform.position += Vector3.left * moveSpeed * Time.deltaTime;
+            transform.position += Vector3.left * (moveSpeed * Time.deltaTime);
             if (transform.position.x <= leftX)
                 movingRight = true;
         }
@@ -100,17 +103,17 @@ public class LungeBoss : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.collider.CompareTag("Player") && !isInvincible)
+        if (col.collider.CompareTag("Player"))
         {
-            
-
-            if (currentHits >= hitsNeeded)
+            var collidersHit = _damageCollider.GetContacts(_hitColliders);
+            if (collidersHit >= 1)
             {
-                StartCoroutine(FlyRoutine());
+                HealthManager.Instance.TakeDamage(1);
             }
         }
     }
 
+    // ReSharper disable Unity.PerformanceAnalysis
     IEnumerator FlyRoutine()
     {
         isFlying = true;
@@ -188,5 +191,11 @@ public class LungeBoss : MonoBehaviour
 
         _levelExit.SetActive(true);
         Destroy(gameObject);
+    }
+
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(1f);
+        StartCoroutine(FlyRoutine());
     }
 }

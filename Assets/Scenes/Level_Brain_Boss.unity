@@ -1763,6 +1763,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5940618314636656650, guid: 76d3f59a7bcc01b4d851b3f465423f5d, type: 3}
+      propertyPath: playerInput
+      value: 
+      objectReference: {fileID: 712313597}
+    - target: {fileID: 5940618314636656650, guid: 76d3f59a7bcc01b4d851b3f465423f5d, type: 3}
       propertyPath: dialogueRunner
       value: 
       objectReference: {fileID: 0}
@@ -1895,6 +1899,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeDamageFromJump
   _headcollider: {fileID: 1091797855}
   _hitColliders: []
+  _bossHealth: {fileID: 58090632}
   _gotHit: 0
   _hasTwin: 0
   _twin: {fileID: 0}

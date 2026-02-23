@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 namespace Misc
@@ -10,10 +11,16 @@ namespace Misc
         [SerializeField] private AudioClip beforeBoss;
         [SerializeField] private AudioClip afterBoss;
         [SerializeField] private bool beforeBossToggle;
+        [SerializeField] private PlayerInput playerInput;
+
+        private bool switchStartet;
         
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if (!other.CompareTag("Player")) return;
+            if (!other.CompareTag("Player")&&!switchStartet) return;
+            
+            switchStartet = true;
+            playerInput.DeactivateInput();
 
             if (dialogueRunner)
             {
@@ -37,6 +44,8 @@ namespace Misc
             Destroy(uiSystem);
             var player = GameObject.Find("Player");
             Destroy(player);
+            var levelExit = GameObject.Find("LevelExit");
+            Destroy(levelExit);
             
             AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(newIdx, LoadSceneMode.Additive);
 

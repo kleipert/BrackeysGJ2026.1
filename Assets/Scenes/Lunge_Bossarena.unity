@@ -1524,8 +1524,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeDamageFromJump
   _headcollider: {fileID: 796159147}
-  _hitColliders:
-  - {fileID: 796159147}
+  _hitColliders: []
+  _bossHealth: {fileID: 1047602470}
   _gotHit: 0
   _hasTwin: 0
   _twin: {fileID: 0}
@@ -1662,6 +1662,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5940618314636656650, guid: 76d3f59a7bcc01b4d851b3f465423f5d, type: 3}
+      propertyPath: playerInput
+      value: 
+      objectReference: {fileID: 1384547008}
     - target: {fileID: 5940618314636656650, guid: 76d3f59a7bcc01b4d851b3f465423f5d, type: 3}
       propertyPath: dialogueRunner
       value: 
@@ -1820,6 +1824,9 @@ MonoBehaviour:
   _headObject: {fileID: 796159145}
   _levelExit: {fileID: 240034745}
   _bossHit: {fileID: 8300000, guid: ed49834980a0de64bb3a38262c195eae, type: 3}
+  _damageCollider: {fileID: 1047602464}
+  _hitColliders:
+  - {fileID: 1384547018}
 --- !u!50 &1047602463
 Rigidbody2D:
   serializedVersion: 5
@@ -20184,8 +20191,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4599653035295709781, guid: 558d8b4d6cadcc24b853b69c20c24b49, type: 3}
+      propertyPath: _canDoubleJump
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4599653035295709781, guid: 558d8b4d6cadcc24b853b69c20c24b49, type: 3}
       propertyPath: _whatIsGround.m_Bits
       value: 192
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145183161803060249, guid: 558d8b4d6cadcc24b853b69c20c24b49, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5145183161803060249, guid: 558d8b4d6cadcc24b853b69c20c24b49, type: 3}
       propertyPath: m_ActionEvents.Array.data[16].m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -20288,7 +20303,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 35a7eb9bb062ad245b7e728ed4a411c5, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -20372,6 +20387,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!61 &1384547018 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 3288284732742114139, guid: 558d8b4d6cadcc24b853b69c20c24b49, type: 3}
+  m_PrefabInstance: {fileID: 1243476444}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1801820301
 PrefabInstance:
   m_ObjectHideFlags: 0
